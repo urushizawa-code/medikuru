@@ -150,7 +150,7 @@
     put('extra-deals',result.additionalDeals===null?'基準となる問い合わせ数が算出できません':`年間の追加成約 ${signed(result.additionalDeals,1)}件`);
     put('extra-margin',signed(man(result.contribution),2),result.contribution<0);
     put('service-cost',fmt(man(result.serviceCost),0));
-    put('service-cost-note','初年度は一括払い55万円、または月々払いの年間66万円（いずれも税込）。2年目以降も同じ料金です。成果が出ない月の月額料金は0円。適用条件は無料相談でご案内します。');
+    put('service-cost-note','初年度は一括払い55万円、または月々払いの年間66万円（いずれも税込）。2年目以降も同じ料金です。成果が出ない月の月額料金は0円。適用条件は無料診断でご案内します。');
     put('net-contribution',signed(man(result.netContribution),2),result.netContribution<0);
     put('cost-ratio',result.costRatio===null?'算出不可':`${fmt(result.costRatio,2)}倍`,result.costRatio<0);
     put('before-inquiries',result.baseAnnualInquiries===null?'算出不可':`${fmt(result.baseAnnualInquiries,1)}件`);
