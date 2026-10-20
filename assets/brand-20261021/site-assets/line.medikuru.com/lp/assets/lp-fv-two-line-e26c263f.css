@@ -1,0 +1,130 @@
+/* Preserve the original Medikuru LP hero and portraits while enlarging its title. */
+.faithful-landing .faithful-fv-headline.fv-two-line {
+  box-sizing: border-box;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: clamp(17px, 3.6cqw, 27px) clamp(10px, 3cqw, 24px) clamp(17px, 3cqw, 25px);
+  background: linear-gradient(151deg, #fff 0%, #f2f4f8 52%, #fff 100%);
+  box-shadow: none;
+}
+.faithful-landing .faithful-fv-headline.fv-two-line::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(135deg, #dde5f1 0 18%, transparent 18% 80%, #e8ebf1 80% 100%);
+  opacity: .34;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.faithful-landing .faithful-fv-headline.fv-two-line .strategy-promise {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #142b66;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: -.055em;
+  white-space: normal;
+}
+.faithful-landing .fv-two-line .fv-two-line__news,
+.faithful-landing .fv-two-line .fv-two-line__ai {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+}
+.faithful-landing .fv-two-line .fv-two-line__news {
+  width: max-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 .06em;
+  background: linear-gradient(transparent 74%, #f1d779 74% 90%, transparent 90%);
+  font-size: clamp(34px, 10.65cqw, 82px);
+  line-height: 1.14;
+  letter-spacing: -.085em;
+}
+.faithful-landing .fv-two-line .fv-two-line__ai {
+  width: max-content;
+  max-width: 100%;
+  margin: .12em auto 0;
+  padding: 0 .06em;
+  background: linear-gradient(transparent 74%, #f1d779 74% 90%, transparent 90%);
+  color: #142b66;
+  font-size: clamp(34px, 10.65cqw, 82px);
+  line-height: 1.14;
+  letter-spacing: .01em;
+}
+.faithful-landing .fv-two-line .fv-two-line__ai em {
+  display: inline-block;
+  margin-right: .08em;
+  color: #142b66;
+  font-size: 1em;
+  font-style: normal;
+  vertical-align: baseline;
+}
+.faithful-landing .fv-two-line .fv-two-line__outcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin: clamp(12px, 3.1cqw, 23px) auto 0;
+  padding: 0;
+  color: #142b66;
+  font-size: clamp(15px, 4.8cqw, 26px);
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: -.03em;
+}
+.faithful-landing .fv-two-line .fv-two-line__outcome span { white-space: nowrap; }
+.faithful-landing .fv-two-line .fv-two-line__outcome span:last-child {
+  padding: 0 .14em;
+  background: linear-gradient(transparent 62%, #f3dc86 62%);
+  font-size: 1.08em;
+}
+.faithful-landing .faithful-fv-masthead .lp-masthead-audience {
+  padding: .4cqw 1.7cqw;
+  background: #e5ca72;
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  color: #142b66;
+  font-style: normal;
+}
+
+/* The offer is the second focal point after the news × AI title. */
+.faithful-landing .faithful-fv-consolidated .faithful-fv-billing > strong {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: min(calc(100% - 26px), 600px);
+  margin: 6px auto 8px;
+  padding: 10px 15px 12px;
+  background: linear-gradient(105deg, #f5e19c 0%, #d2aa51 50%, #f1d98b 100%);
+  clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%);
+  color: #142b66;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.12;
+  text-align: center;
+  text-shadow: none;
+}
+.faithful-landing .faithful-fv-billing > strong .strategy-guarantee-first {
+  display: block;
+  font-size: clamp(19px, 5.5cqw, 32px);
+  letter-spacing: -.045em;
+  white-space: nowrap;
+}
+.faithful-landing .faithful-fv-billing > strong .strategy-guarantee-second {
+  display: block;
+  font-size: clamp(24px, 7.4cqw, 42px);
+  letter-spacing: -.055em;
+  white-space: nowrap;
+}
+@media(max-width:600px) {
+  .faithful-landing .fv-two-line .fv-two-line__outcome { gap: 2px; }
+}
+@media(max-width:390px) {
+  .faithful-landing .faithful-fv-headline.fv-two-line { padding-inline: 10px; }
+}

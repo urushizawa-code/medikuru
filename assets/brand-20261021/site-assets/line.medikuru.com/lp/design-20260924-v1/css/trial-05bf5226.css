@@ -1,0 +1,59 @@
+/* 数字表示の試作。元画像と本文のデザインはそのまま利用します。 */
+body { background-image: none; }
+.proof-band {
+  position: relative;
+  container-type: inline-size;
+  scroll-margin-top: 20px;
+}
+.proof-band > img { width: 100%; height: auto; }
+.proof-number-grid {
+  position: absolute;
+  top: 7.9%;
+  left: 4%;
+  width: 92%;
+  height: 11.15%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  color: #ffe59c;
+}
+.proof-number {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+  line-height: .95;
+}
+.proof-number strong {
+  min-width: 2.55ch;
+  font-size: 13.6cqw;
+  font-weight: 900;
+  letter-spacing: -.045em;
+  text-align: right;
+}
+.proof-number:last-child strong { min-width: 1.7ch; }
+.proof-number span {
+  margin-left: .28em;
+  font-size: 4.53cqw;
+  font-weight: 900;
+}
+.challenge-original {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 750 / 916;
+  overflow: hidden;
+}
+.challenge-original img {
+  position: absolute;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  left: 0;
+  top: 0;
+}
+.search-stat p { padding: 0; }
+.search-stat .search-stat__replay { width: auto; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

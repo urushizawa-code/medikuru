@@ -1,0 +1,53 @@
+/* Approved A hero, 2026-09-28. Scoped; lower LP and existing CTA artwork remain unchanged. */
+body.faithful-landing .lp-hero-a{--navy:#142b66;--navy-deep:#0a204d;--gold:#b39243;--gold-light:#f3db86;display:block;position:relative;width:100%;margin:0;padding:0;container-type:inline-size;background:#fff;overflow:hidden;color:var(--navy);font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;text-align:center;line-height:normal}
+body.faithful-landing .lp-hero-a,body.faithful-landing .lp-hero-a *{box-sizing:border-box}
+body.faithful-landing .lp-hero-a h1,body.faithful-landing .lp-hero-a h2,body.faithful-landing .lp-hero-a p{padding:0;border:0;font-style:normal;text-shadow:none}
+body.faithful-landing .lp-hero-a p{color:inherit}
+body.faithful-landing .lp-hero-a a{color:inherit;text-decoration:none}
+body.faithful-landing .lp-hero-a .masthead{height:12.8cqw;position:relative;display:flex;align-items:center;justify-content:space-between;padding:2.8cqw 4.7cqw 1.1cqw;isolation:isolate;background:#f9fafc}
+body.faithful-landing .lp-hero-a .masthead:before{content:"";position:absolute;z-index:-1;left:0;right:0;top:0;height:4.8cqw;background:var(--navy);clip-path:polygon(0 0,87% 0,0 100%)}
+body.faithful-landing .lp-hero-a .audience{position:relative;top:1.36cqw;background:linear-gradient(95deg,#ebd37c,#c0a24e);font-size:3.5cqw;font-weight:850;letter-spacing:.025em;line-height:1.6;white-space:nowrap;padding:0 1.7cqw;transform:skew(-7deg)}
+body.faithful-landing .lp-hero-a .audience span{display:block;transform:skew(7deg)}
+body.faithful-landing .lp-hero-a .brand{position:relative;display:block;width:31%;aspect-ratio:648/192;overflow:hidden;flex-shrink:0}
+body.faithful-landing .lp-hero-a .brand img{position:absolute;width:138.888889%;height:auto;left:-19.444445%;top:-45.833334%;max-width:none}
+body.faithful-landing .lp-hero-a .hero-head{position:relative;isolation:isolate;padding:4.2cqw 4.7cqw 3.5cqw;text-align:center}
+body.faithful-landing .lp-hero-a .hero-title{margin:0;font-size:9.8cqw;font-weight:900;letter-spacing:-.045em;line-height:1.25}
+body.faithful-landing .lp-hero-a .source{display:block;white-space:nowrap;word-break:keep-all}
+body.faithful-landing .lp-hero-a .source--news{font-size:1em}
+body.faithful-landing .lp-hero-a .source--ai{font-size:1em;letter-spacing:.005em}
+body.faithful-landing .lp-hero-a .source--ai .times{font-size:.78em;margin-right:.1em;font-family:Arial,sans-serif;font-weight:700;font-style:normal}
+body.faithful-landing .lp-hero-a .source--ai .de{font-size:.6em;letter-spacing:-.02em;font-weight:800;margin-left:.04em}
+body.faithful-landing .lp-hero-a .conclusion{display:block;font-size:7.6cqw;line-height:1.45;white-space:nowrap;letter-spacing:-.03em;margin-top:3.0cqw;font-weight:900}
+body.faithful-landing .lp-hero-a .portraits{position:relative;width:100%;aspect-ratio:750/489;overflow:hidden;background:#fff}
+body.faithful-landing .lp-hero-a .portraits>img{display:block;width:100%;height:auto;margin-top:-46.2666667%;max-width:none}
+body.faithful-landing .lp-hero-a .person-role{position:absolute;z-index:2;display:block;padding:.28cqw 0;color:var(--navy);background:#fff;text-align:center;font-size:1.85cqw;font-weight:650;line-height:1.3;letter-spacing:0;white-space:nowrap;box-sizing:border-box;pointer-events:none;--role-angle:-11.09deg;transform:skewX(var(--role-angle));transform-origin:center bottom}
+body.faithful-landing .lp-hero-a .person-role>span{display:block;transform:skewX(calc(-1 * var(--role-angle)))}
+body.faithful-landing .lp-hero-a .person-role--take{left:7.2472%;width:22.7528%;bottom:35.38%}
+body.faithful-landing .lp-hero-a .person-role--uru{--role-angle:-10deg;left:40.232%;width:20.468%;bottom:30.27%}
+body.faithful-landing .lp-hero-a .person-role--ando{left:72.2472%;width:22.7528%;bottom:35.38%}
+body.faithful-landing .lp-hero-a .person-name{position:absolute;z-index:3;display:flex;align-items:center;justify-content:center;background:#fff;color:var(--navy);font-size:2.85cqw;line-height:1;font-style:italic;font-weight:850;letter-spacing:.025em;white-space:nowrap;pointer-events:none;clip-path:polygon(4.8% 0,100% 0,95.2% 100%,0 100%)}
+body.faithful-landing .lp-hero-a .person-name--take{left:6.1%;width:23.9%;top:64.62%;height:8.98%}
+body.faithful-landing .lp-hero-a .person-name--uru{left:39.2%;width:21.5%;top:69.73%;height:8.98%}
+body.faithful-landing .lp-hero-a .person-name--ando{left:71.1%;width:23.9%;top:64.62%;height:8.98%}
+body.faithful-landing .lp-hero-a .offer{padding:4cqw 5cqw 4.7cqw;text-align:center;background:var(--navy);color:#fff;position:relative}
+body.faithful-landing .lp-hero-a .offer-kicker{font-size:3.4cqw;font-weight:700;margin:0 0 1.6cqw;letter-spacing:.02em}
+body.faithful-landing .lp-hero-a .offer-title{margin:0 auto 2.8cqw;width:93%;padding:2cqw 2cqw 2.2cqw;background:linear-gradient(100deg,#f1dea0,#d1ae58 60%,#ead084);clip-path:polygon(2.5% 0,100% 0,97.5% 100%,0 100%);font-size:6.8cqw;font-weight:900;line-height:1.3;letter-spacing:-.045em;color:var(--navy)}
+body.faithful-landing .lp-hero-a .offer-title span{display:block}
+body.faithful-landing .lp-hero-a .offer-title span:first-child{font-size:5.2cqw}
+body.faithful-landing .lp-hero-a .offer-detail{font-size:3.8cqw;line-height:1.65;font-weight:750;letter-spacing:-.03em;margin:0}
+body.faithful-landing .lp-hero-a .offer-detail span{display:block;white-space:nowrap}
+body.faithful-landing .lp-hero-a .condition-link{font-size:2.6cqw;line-height:1.5;font-weight:500;color:#d8e0f0;margin:2.4cqw 0 0;display:inline-block;border-bottom:1px solid #cdd7e5;padding-bottom:.3cqw}
+body.faithful-landing .lp-hero-a .hero-head{padding-top:4.5cqw;background:linear-gradient(140deg,#fff,#f4f6fa 58%,#fff)}
+body.faithful-landing .lp-hero-a .hero-head:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(135deg,#dfe7f3 0 17%,transparent 17% 79%,#e6ebf2 79%);opacity:.38}
+body.faithful-landing .lp-hero-a .source{width:max-content;max-width:100%;margin:auto;background:linear-gradient(transparent 77%,var(--gold-light) 77% 92%,transparent 92%);padding:0 .04em}
+body.faithful-landing .lp-hero-a .source--ai{margin-top:1.35cqw}
+body.faithful-landing .lp-hero-a .conclusion{margin:3.7cqw auto 0;font-size:7.5cqw}
+body.faithful-landing .lp-hero-a .conclusion:after{display:none}
+
+body.faithful-landing .lp-hero-a .offer{padding-bottom:2.3cqw}
+body.faithful-landing .cta.faithful-line-cta-wrap.lp-hero-a-cta{height:min(26vw,195px)}
+body.faithful-landing .lp-hero-a-cta>img{height:100%;object-fit:cover}
+body.faithful-landing #proof-counts .lp-a-count-heading{position:absolute;z-index:1;top:3.072%;width:40%;height:5.004%;display:flex;justify-content:center;align-items:center;white-space:nowrap;background:#1c2e58;color:#fff;font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:3.5cqw;font-weight:800;line-height:1.4;letter-spacing:0}
+body.faithful-landing #proof-counts .lp-a-count-heading--total{left:7%}
+body.faithful-landing #proof-counts .lp-a-count-heading--next{left:53%}
+body.faithful-landing #proof-counts .lp-a-count-heading>span{font-size:1.22em;color:#a0d5f5;font-style:normal;margin-inline:.05em}

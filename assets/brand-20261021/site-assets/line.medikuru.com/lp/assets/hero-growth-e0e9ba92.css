@@ -1,0 +1,29 @@
+/* Requested growth headline. All other approved LP design remains intact. */
+body.faithful-landing .lp-hero-a .conclusion--growth {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.1cqw;
+  margin: 3.7cqw auto 0;
+  font-size: 6.55cqw;
+  line-height: 1.45;
+  letter-spacing: -.035em;
+}
+body.faithful-landing .lp-hero-a .growth-copy {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+body.faithful-landing .lp-hero-a .growth-emphasis {
+  background: linear-gradient(transparent 76%, #f3db86 76% 94%, transparent 94%);
+}
+body.faithful-landing .lp-hero-a .growth-arrow {
+  flex: 0 0 7.4cqw;
+  width: 7.4cqw;
+  height: 7.4cqw;
+  overflow: visible;
+  fill: none;
+  stroke: #b39243;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

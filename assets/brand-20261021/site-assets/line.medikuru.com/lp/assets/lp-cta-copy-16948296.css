@@ -1,0 +1,120 @@
+/* HTML CTA copy with the transparent bubble supplied by LINE Developers. */
+.faithful-landing .cta.faithful-line-cta-wrap {
+  position: relative;
+  container-type: inline-size;
+}
+.faithful-landing .faithful-line-cta-wrap > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.faithful-landing .faithful-image-button.faithful-line-cta {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5cqw;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1.4cqw 0;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.faithful-landing .faithful-line-cta .faithful-cta-source { display: none !important; }
+.faithful-line-cta .line-cta-lead {
+  display: block;
+  max-width: 96%;
+  color: #fff;
+  font-size: 3.9cqw;
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: .015em;
+  white-space: nowrap;
+}
+.faithful-line-cta .line-cta-pill {
+  display: grid;
+  grid-template-columns: 12cqw 1fr 2.5cqw;
+  align-items: center;
+  gap: 1.6cqw;
+  width: 90%;
+  min-height: 15.2cqw;
+  padding: 1.2cqw 2.2cqw;
+  border: .8cqw solid #93bd71;
+  border-radius: 100px;
+  background: linear-gradient(180deg, #65bb36 0%, #2d891a 28%, #1f7e10 55%, #187909 100%);
+  box-shadow: 0 .65cqw 0 #7e9b70, inset 0 .3cqw .4cqw #b9ed8b66;
+  color: #fff;
+}
+.faithful-line-cta .line-cta-logo {
+  display: block;
+  width: 12cqw;
+  aspect-ratio: 1;
+  background-image: url("data:image/png;base64,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");
+  background-repeat: no-repeat;
+  background-size: 135% 135%;
+  background-position: center;
+}
+.faithful-line-cta .line-cta-label {
+  display: block;
+  min-width: 0;
+  color: #fff;
+  font-size: 5.4cqw;
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: .01em;
+  white-space: nowrap;
+  -webkit-text-stroke: .014em currentColor;
+  text-shadow: 0 .12cqw .08cqw #154a12;
+}
+.faithful-line-cta .line-cta-arrow {
+  width: 1.7cqw;
+  height: 1.7cqw;
+  border-top: .55cqw solid #fff;
+  border-right: .55cqw solid #fff;
+  transform: rotate(45deg);
+}
+.faithful-line-cta .line-cta-caption {
+  display: block;
+  color: #fff;
+  font-size: 3.35cqw;
+  font-weight: 750;
+  line-height: 1.4;
+  letter-spacing: .01em;
+  white-space: nowrap;
+}
+.faithful-line-cta:focus-visible { outline: none; }
+.faithful-line-cta:focus-visible .line-cta-pill { outline: 3px solid #fff45a; outline-offset: 4px; }
+@media (hover:hover) {
+  .faithful-line-cta:hover .line-cta-pill { filter: brightness(1.045); }
+}
+
+.faithful-line-cta .line-cta-lead > span { display: block; white-space: nowrap; }
+
+/* Text multiplication sign stays legible on the navy CTA (no emoji glyph). */
+.faithful-line-cta .line-cta-lead .line-cta-times{display:inline;color:#e3cc7e;font-family:Arial,sans-serif;font-style:normal;font-weight:800;margin:0 .14em;vertical-align:baseline}
+
+/* Match the 1-second pulse used by the news-article button below. */
+.faithful-line-cta .line-cta-pill { animation: pulse 1s infinite; transform-origin: center; }
+@media (prefers-reduced-motion: reduce) {
+  .faithful-line-cta .line-cta-pill { animation: none; }
+}
+
+/* Keep the use-and-pricing CTA legible as two intentional lines. */
+.faithful-line-cta .line-cta-label { white-space: normal; line-height: 1.12; }
+.faithful-line-cta .line-cta-label > span { display: block; white-space: nowrap; }
+
+/* One typeface throughout the LP, matching the problem-section heading.
+   Sizes, weights and existing intentional upright/italic styles stay scoped. */
+body.faithful-landing { --lp-unified-font: Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; }
+body.faithful-landing,
+body.faithful-landing :is(h1,h2,h3,h4,h5,h6,p,a,span,div,section,summary,details,button,input,select,textarea,label,small,strong,b,em,mark,li,dt,dd,th,td,blockquote):not([class*="icon"]):not([class*="fa-"]) {
+  font-family: var(--lp-unified-font) !important;
+}

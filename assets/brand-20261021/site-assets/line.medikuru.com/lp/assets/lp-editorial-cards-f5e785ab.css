@@ -1,0 +1,29 @@
+/* Three clear business pains in the original LP's navy-and-gold graphic language. */
+body.faithful-landing #comparison.lp-problem-cards {
+  padding: clamp(31px, 6cqw, 52px) clamp(18px, 4.5cqw, 35px);
+  background: linear-gradient(145deg, #102759, #193b7d);
+  color: #fff;
+  text-align: center;
+}
+body.faithful-landing #comparison.lp-problem-cards h2 {
+  margin: 0 0 24px;
+  color: #fff;
+  font-size: clamp(20px, 6.2cqw, 39px);
+  font-weight: 900;
+  line-height: 1.25;
+  letter-spacing: -.06em;
+  white-space: nowrap;
+}
+body.faithful-landing #comparison.lp-problem-cards h2 em { color: #f4dc8e; font-style: inherit; }
+.lp-problem-cards__grid { display: grid; grid-template-columns: 1fr; gap: clamp(12px, 2cqw, 16px); margin: 0; padding: 0; list-style: none; }
+.lp-problem-cards__grid li { display: flex; flex-direction: column; align-items: center; justify-content: center; min-width: 0; min-height: clamp(188px, 52cqw, 246px); padding: 18px 10px; background: #fff; border-radius: 9px; box-shadow: 0 8px 16px #06163825; }
+.lp-problem-cards__grid svg { display: block; flex: none; width: clamp(80px, 23cqw, 104px); height: auto; margin: 0 auto 12px; }
+.lp-problem-cards__grid p { margin: 0; padding: 0; color: #142b66; font-size: clamp(20px, 6cqw, 36px); font-weight: 900; line-height: 1.5; letter-spacing: -.04em; }
+.lp-problem-cards__grid p span,.lp-problem-cards__grid p strong { display: block; color: inherit; font: inherit; white-space: nowrap; }
+.lp-problem-cards__grid p em { color: #aa842e; font-style: normal; }
+body.faithful-landing #comparison .lp-problem-cards__bridge { margin: 22px 0 0; padding: 0; color: #fff; font-size: clamp(15px, 3.6cqw, 23px); font-weight: 700; line-height: 1.55; }
+body.faithful-landing #comparison .lp-problem-cards__bridge strong { color: #f4dc8e; font-weight: 900; }
+body.faithful-landing #comparison .lp-concise-link { margin-top: 22px; }
+@media(max-width:680px) {
+  body.faithful-landing #comparison.lp-problem-cards h2 { margin-bottom: 19px; }
+}
