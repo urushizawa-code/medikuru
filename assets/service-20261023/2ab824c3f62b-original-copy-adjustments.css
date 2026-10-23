@@ -1,0 +1,56 @@
+/* Copy fitting only. All backgrounds, imagery, section styles and layout come from the original site. */
+[data-original-single-plan]{grid-template-columns:minmax(0,1fr)!important;max-width:620px!important;margin-left:auto!important;margin-right:auto!important}
+[data-original-single-plan] .mk-plan{width:100%!important;max-width:none!important;box-sizing:border-box}
+[data-original-single-plan] .mk-plan h3{display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important}
+.original-monthly-support{margin-top:24px!important;line-height:1.9!important}
+.original-monthly-support>span{display:block!important;margin-top:10px!important}
+.original-future-note{margin:20px auto!important;max-width:48em;font-size:13px!important;line-height:1.8!important}
+#mkf-preview-hero .mk-ad-concern{font-size:clamp(14px,3.65vw,27px)!important}
+.hero .mk-adcost-wish{font-size:clamp(15px,2.2vw,28px)!important}
+#original-preview-dialog{max-width:460px;width:calc(100% - 40px);box-sizing:border-box;padding:28px;border:1px solid #bba464;border-radius:12px;color:#142b66;background:white;line-height:1.8}
+#original-preview-dialog::backdrop{background:#0008}
+#original-preview-dialog h2{font-size:20px;margin:0 0 14px}
+#original-preview-dialog button{padding:10px 24px;background:#142b66;color:white;border:0;border-radius:4px;margin-top:16px;cursor:pointer}
+@media(max-width:600px){.original-monthly-support br{display:none}.original-monthly-support{padding:20px!important}.original-monthly-support>b{font-size:19px!important}.original-monthly-support>span{font-size:14px!important} [data-original-single-plan] .mk-plan-coverage div{gap:12px!important}}
+.original-monthly-support .original-nowrap,.original-nowrap{display:inline-block!important;white-space:nowrap!important;margin:0!important;font:inherit!important}
+@media(min-width:361px) and (max-width:430px){#mkf-preview-hero .masthead .brand{transform:translateX(-4px)!important}}
+@media(max-width:360px){.hero .mk-opening-news>span{white-space:normal!important;max-width:100%!important;text-wrap:balance}.hero .mk-opening-news{max-width:100%!important}}
+.hero .mk-opening-news .original-hero-unit{display:inline-block!important;white-space:nowrap!important;font:inherit!important}
+@media(min-width:431px) and (max-width:750px){#mkf-preview-hero .masthead .brand{transform:translateX(-6px)!important}}
+.mk-lp-diagnosis-lead .original-diagnosis-budget{display:block;font-size:clamp(17px,3.8vw,23px);line-height:1.6}
+.mk-lp-diagnosis-lead .original-diagnosis-premise{display:block;font-size:clamp(14px,3.6vw,21px);line-height:1.7;white-space:nowrap}
+body.faithful-landing .lp-hero-a-cta .mk-lp-diagnosis-lead>strong{display:block!important;margin-top:10px!important;line-height:1.5!important;font-size:clamp(23px,5.3vw,32px)!important}
+.mk-lp-diagnosis-lead>strong>span{display:block!important;font:inherit!important;color:inherit!important}
+.mk-lp-diagnosis-lead>small{display:block;margin-top:10px;font-size:clamp(14px,3.6vw,20px);line-height:1.7;color:#fff}
+/* Move the short message below the original three icons and keep each line intact. */
+body[data-original-revision="lp"] #mkf-preview-hero #guarantee-preview{padding:14px 12px 10px!important}
+body[data-original-revision="lp"] #mkf-preview-hero #guarantee-preview>strong{display:block!important;font-size:clamp(17px,4.5cqw,30px)!important;line-height:1.65!important;letter-spacing:0!important}
+body[data-original-revision="lp"] #mkf-preview-hero #guarantee-preview>strong>span{display:block!important;font:inherit!important;white-space:nowrap!important}
+/* Remove the stroke and animated scaling that blurred the LINE label. */
+body[data-original-revision="lp"] .faithful-line-cta .line-cta-pill{animation:none!important;transform:none!important}
+body[data-original-revision="lp"] .faithful-line-cta .line-cta-label{font-weight:700!important;font-size:5.4cqw!important;line-height:1.32!important;letter-spacing:.025em!important;-webkit-text-stroke:0!important;text-shadow:none!important}
+body[data-original-revision="lp"] #report-benefit .entry{display:block!important}
+body[data-original-revision="lp"] #report-benefit .entry-copy{margin-bottom:22px!important}
+body[data-original-revision="lp"] #ai-search-score{padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;max-width:640px!important;margin:0 auto!important}
+body[data-original-revision="lp"] .original-diagnosis-example{margin:0}
+body[data-original-revision="lp"] .original-diagnosis-example img{display:block;width:100%;height:auto;border:1px solid #d9d9ce;border-radius:12px}
+body[data-original-revision="lp"] .original-diagnosis-example figcaption{font-size:clamp(12px,2.8vw,15px);line-height:1.8;color:#dce4f2;text-align:left;margin-top:12px}
+body[data-original-revision="lp"] #report-benefit .gift8{font-size:clamp(19px,4.8vw,28px)!important;line-height:1.65!important}
+
+/* Tighten only the gap from the hero promise to the first diagnosis invitation. */
+body[data-original-revision="lp"] #mkf-preview-hero + .lp-hero-a-cta > .mk-lp-diagnosis-lead{padding-top:8px!important}
+/* The diagnostic introduction stays readable alongside the native LP sample. */
+body[data-original-revision="lp"] #report-benefit.mk8 .entry-copy>p.tiny{font-size:17px!important;line-height:1.85!important;text-align:left!important;max-width:600px!important;margin:18px auto 24px!important;padding:0 4px!important}
+body[data-original-revision="hp"] #branding-concept .original-search-intent{display:block}
+body[data-original-revision="hp"] #branding-concept .original-search-intent>span{display:inline-block}
+body[data-original-revision="lp"] #pricing #subscription-pricing .mk-plan-grid[data-original-single-plan]{grid-template-columns:minmax(0,1fr)!important}
+body[data-original-revision="lp"] #pricing #subscription-pricing .mk-plan-grid[data-original-single-plan]>.mk-plan h3{width:100%!important;max-width:none!important;align-self:center!important}
+body[data-original-revision="lp"] #pricing #subscription-pricing .mk-plan-grid[data-original-single-plan]>.mk-plan .mk-plan-scope{font-size:16px!important;line-height:1.8!important}
+@media(max-width:600px){
+body[data-original-revision="lp"] #subscription-pricing .mk-plan-grid[data-original-single-plan]>.mk-plan{display:flex!important;flex-direction:column!important;align-items:stretch!important}
+body[data-original-revision="lp"] #subscription-pricing .mk-plan-grid[data-original-single-plan]>.mk-plan h3{display:flex!important;align-items:center!important;justify-content:center!important;margin:18px 0 8px!important}
+body[data-original-revision="lp"] #subscription-pricing .mk-plan-grid[data-original-single-plan]>.mk-plan .mk-plan-tax{font-size:14px!important;text-align:center!important;margin:0 0 16px!important}
+body[data-original-revision="lp"] #subscription-pricing .mk-plan-grid[data-original-single-plan]>.mk-plan .mk-plan-scope{border-left:0!important;padding:16px 8px!important;font-size:16px!important;line-height:1.8!important;text-align:center!important}
+body[data-original-revision="lp"] #subscription-pricing .mk-plan-grid[data-original-single-plan]>.mk-plan .mk-plan-scope b{font-size:17px!important;line-height:1.8!important}
+body[data-original-revision="lp"] #subscription-pricing .mk-plan-grid[data-original-single-plan]>.mk-plan .mk-plan-contract{font-size:15px!important;line-height:1.8!important}
+}

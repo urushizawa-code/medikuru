@@ -1,0 +1,16 @@
+/* Connect the comparison to the existing AI demo without changing playback. */
+body.faithful-landing #ai-search-demo .mk-article-ai-intro .mk-search-demo__eyebrow{font-size:clamp(12px,3.4cqw,23px);line-height:1.65;color:#88651f;margin:0 0 4cqw}
+.mk-article-ai-intro .mk-search-demo__eyebrow>span{display:block;white-space:nowrap}
+body.faithful-landing #ai-search-demo .mk-article-ai-intro .mk-search-demo__title{font-size:clamp(19px,5.65cqw,39px);line-height:1.55;letter-spacing:-.055em}
+body.faithful-landing #ai-search-demo .mk-article-ai-intro .mk-search-demo__lead{text-align:left;margin:4cqw 0 0;font-size:clamp(12px,3.5cqw,21px);line-height:1.85}
+body.faithful-landing #ai-search-demo .mk-article-ai-flow{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4cqw;margin:6cqw 0 0;padding:0;text-align:center}
+.mk-article-ai-flow>li{position:relative;min-width:0;padding:2.5cqw .6cqw 3cqw;border:1px solid #c7b477;background:#fff;color:#142b66}
+.mk-article-ai-flow>li:last-child{background:#fff5d7;border-color:#af8f3d}
+.mk-article-ai-flow>li:not(:last-child)::after{content:"→";position:absolute;right:-4cqw;top:44%;width:4cqw;line-height:1;color:#a1853b;font-size:clamp(14px,4cqw,27px);font-weight:700}
+.mk-article-ai-flow__number{display:block;color:#8c6d24;font-size:clamp(9px,2.5cqw,17px);font-weight:700;line-height:1.5;letter-spacing:.08em}
+.mk-article-ai-flow svg{display:block;width:17cqw;height:13.6cqw;margin:1.3cqw auto 2cqw;fill:none;stroke:currentColor;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.mk-article-ai-flow small,.mk-article-ai-flow strong{display:block;white-space:nowrap;letter-spacing:-.055em}
+.mk-article-ai-flow small{font-size:clamp(9px,2.65cqw,17px);line-height:1.6;font-weight:500}
+.mk-article-ai-flow strong{font-size:clamp(12px,3.55cqw,24px);line-height:1.6;font-weight:800}
+body.faithful-landing #ai-search-demo .mk-article-ai-intro__context{font-size:clamp(13px,3.8cqw,25px);line-height:1.8;margin:5cqw 0 0;color:#142b66;font-weight:500}
+.mk-article-ai-intro__context strong{font-weight:800}

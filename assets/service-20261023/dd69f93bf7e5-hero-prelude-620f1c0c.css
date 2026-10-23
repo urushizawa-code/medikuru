@@ -1,0 +1,20 @@
+/* Selected B navy-and-gold introduction, integrated into the full LP preview. */
+body.faithful-landing .lp-hero-a .hero-head{padding-top:4.5cqw}
+body.faithful-landing .lp-hero-a .hero-prelude--a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:max-content;
+  max-width:100%;
+  margin:0 auto 3.8cqw;
+  padding:1.4cqw 3.6cqw;
+  border:1.5px solid #b39243;
+  border-radius:0;
+  background:#142b66;
+  color:#fff;
+  font-size:4.5cqw;
+  line-height:1.5;
+  font-weight:800;
+  letter-spacing:.035em;
+  white-space:nowrap;
+}

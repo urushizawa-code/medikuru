@@ -1,0 +1,217 @@
+/* Typography of text formerly embedded in the original artwork. */
+body.faithful-landing :is(i,caption) {font-family:var(--lp-unified-font)!important}
+body.faithful-landing .lp-proof-caption {position:absolute;left:8%;top:38.43%;width:84%;height:6.15%;margin:0;padding:0;display:flex;align-items:center;justify-content:center;background:#fff;color:#33516a;font-size:4.1cqw;line-height:1.2;font-weight:800;white-space:nowrap;letter-spacing:.01em}
+body.faithful-landing .lp-proof-caption em {font-size:1.4em;line-height:1.2;font-weight:900;font-style:italic;color:#142b66;background:linear-gradient(transparent 85%,#fff45a 85%);margin-inline:.06em}
+body.faithful-landing .btn2 {container-type:inline-size}
+body.faithful-landing .lp-news-button-label {position:absolute;left:15.6%;top:26%;width:80%;height:48%;display:flex;align-items:center;justify-content:center;margin:0;padding:0;color:#142b66;background:linear-gradient(#e4cb84 0%,#e8d38f 15.5%,#ebda97 32.8%,#efde9e 50%,#eedfa0 67.2%,#e6cf8a 84.5%,#d9bd70 100%);font-size:5.5cqw;line-height:1.2;font-weight:900;font-style:normal;letter-spacing:.045em;white-space:nowrap;text-shadow:0 1px 1px #fff}
+/* Retain both original photos/artwork; mask only their raster text with live text.
+   All cqw values refer to each 750px-wide original artwork, not the viewport. */
+body.faithful-landing .lp-testimonial-image {
+  position: relative;
+  container-type: inline-size;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #142b66;
+  font-family: var(--lp-unified-font, Helvetica, Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif);
+  text-align: left;
+  isolation: isolate;
+}
+body.faithful-landing .lp-testimonial-image__art { display: block; width: 100%; height: auto; max-width: none; margin: 0; }
+body.faithful-landing .lp-testimonial-image :is(h2,h3,p,blockquote) { box-sizing: border-box; margin: 0; padding: 0; border: 0; color: inherit; letter-spacing: 0; text-shadow: none; }
+body.faithful-landing .lp-testimonial-image__heading {
+  position: absolute;
+  z-index: 1;
+  left: 4%;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f5f6f7;
+  text-align: center;
+  font-size: 5.65cqw;
+  line-height: 1.38;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -.025em;
+}
+body.faithful-landing .lp-testimonial-image__heading > span { display: block; white-space: nowrap; }
+body.faithful-landing .lp-testimonial-image__heading mark { padding: 0; color: #b39243; background: linear-gradient(transparent 83%, #fff45a 83%); font-size: 1.31em; font-weight: inherit; font-style: inherit; }
+body.faithful-landing .lp-testimonial-image--primary .lp-testimonial-image__heading { top: 2.45%; height: 10%; }
+body.faithful-landing .lp-testimonial-image--additional .lp-testimonial-image__heading { top: 1.35%; height: 11.2%; }
+body.faithful-landing .lp-testimonial-image__identity,
+body.faithful-landing .lp-testimonial-image__quote { position: absolute; z-index: 1; background: #fff; }
+body.faithful-landing .lp-testimonial-image__identity { display: flex; flex-direction: column; justify-content: center; gap: .4cqw; }
+body.faithful-landing .lp-testimonial-image__identity p { font-size: 3.8cqw; line-height: 1.43; font-weight: 500; font-style: normal; white-space: nowrap; }
+body.faithful-landing .lp-testimonial-image__identity h3 { font-size: 5.3cqw; line-height: 1.2; font-weight: 800; font-style: normal; white-space: nowrap; }
+body.faithful-landing .lp-testimonial-image__quote { left: 10.7%; width: 79.4%; font-size: 3.7cqw; line-height: 1.52; font-weight: 500; font-style: normal; overflow-wrap: normal; word-break: normal; }
+body.faithful-landing .lp-testimonial-image__quote p { font: inherit; }
+body.faithful-landing .lp-testimonial-image__identity--hayashi { left: 10.7%; top: 17.25%; width: 50.6%; height: 6.02%; }
+body.faithful-landing .lp-testimonial-image__quote--hayashi { top: 25.5%; height: 10.62%; }
+body.faithful-landing .lp-testimonial-image__identity--inaba { left: 39.5%; top: 43.55%; width: 49.1%; height: 8.13%; }
+body.faithful-landing .lp-testimonial-image__quote--inaba { top: 54%; height: 10.37%; }
+body.faithful-landing .lp-testimonial-image__identity--sakaguchi { left: 10.7%; top: 72.4%; width: 50.8%; height: 10.8%; }
+body.faithful-landing .lp-testimonial-image__identity--sakaguchi p { font-size: 3.7cqw; }
+body.faithful-landing .lp-testimonial-image__quote--sakaguchi { top: 86.2%; height: 10.62%; }
+body.faithful-landing .lp-testimonial-image__identity--shibuya { left: 39.4%; top: 20.2%; width: 49.2%; height: 10.9%; }
+body.faithful-landing .lp-testimonial-image__quote--shibuya { top: 33.85%; height: 13%; }
+body.faithful-landing .lp-testimonial-image__identity--mizukawa { left: 10.7%; top: 57.3%; width: 50.6%; height: 7.4%; }
+body.faithful-landing .lp-testimonial-image__quote--mizukawa { top: 68.3%; height: 25.5%; font-size: 3.45cqw; line-height: 1.58; }
+
+/* Source: body3_03.webp, 750 x 2222. The existing top crop is exactly 433px.
+   All coordinates below are expressed against the original 750px image width.
+   Photographs, frames and horizontal rules remain in the unmodified source. */
+body.faithful-landing .lp-concise-directors.lp-directors-html {
+  position: relative;
+  container-type: inline-size;
+  font-family: Helvetica, Arial, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  color: #003a70;
+}
+body.faithful-landing .lp-directors-html > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  margin-top: -57.7333333333%;
+}
+.lp-directors-html .lp-directors-kicker,
+.lp-directors-html .lp-directors-title,
+.lp-directors-html .lp-director-identity,
+.lp-directors-html .lp-director-description {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: inherit;
+}
+.lp-directors-html .lp-directors-kicker {
+  left: 16.8%;
+  top: calc(53 * 100cqw / 750);
+  width: 67.2%;
+  height: calc(49 * 100cqw / 750);
+  background: #f7f7f9;
+  color: #b49a47;
+  font-size: calc(35 * 100cqw / 750);
+  line-height: calc(49 * 100cqw / 750);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+.lp-directors-html .lp-directors-kicker > span {
+  font-size: calc(27 * 100cqw / 750);
+}
+.lp-directors-html .lp-directors-title {
+  left: 12.3%;
+  top: calc(111 * 100cqw / 750);
+  width: 74.8%;
+  height: calc(75 * 100cqw / 750);
+  padding: 0;
+  color: #fff;
+  background: #00346b;
+  clip-path: polygon(3.4% 0, 100% 0, 96.6% 100%, 0 100%);
+  font-size: calc(47 * 100cqw / 750);
+  line-height: calc(75 * 100cqw / 750);
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+.lp-directors-html .lp-director {
+  --director-left: 370;
+  --identity-top: 270;
+  --description-top: 450;
+  --description-height: 239;
+  --identity-y: 35;
+  --description-y: 215;
+  --card-background: linear-gradient(250deg, #d6dee2 0%, #faf6ea 76%);
+  --background-x: -20;
+  --card-width: 374;
+}
+.lp-directors-html .lp-director--takenouchi {
+  --director-left: 56;
+  --identity-top: 820;
+  --description-top: 1003;
+  --description-height: 156;
+  --identity-y: 74;
+  --description-y: 257;
+  --card-background: linear-gradient(110deg, #d6dee2 0%, #faf6ea 76%);
+  --background-x: -30;
+}
+.lp-directors-html .lp-director--andou {
+  --identity-top: 1349;
+  --description-top: 1528;
+  --description-height: 158;
+  --identity-y: 74;
+  --description-y: 253;
+}
+.lp-directors-html .lp-director-identity,
+.lp-directors-html .lp-director-description {
+  left: calc(var(--director-left) * 100cqw / 750);
+  width: calc(331 * 100cqw / 750);
+  background-image: var(--card-background);
+  background-size: calc(var(--card-width) * 100cqw / 750) calc(468 * 100cqw / 750);
+  background-repeat: no-repeat;
+  text-align: left;
+}
+.lp-directors-html .lp-director-identity {
+  top: calc(var(--identity-top) * 100cqw / 750);
+  height: calc(139 * 100cqw / 750);
+  padding: calc(4 * 100cqw / 750) calc(4 * 100cqw / 750);
+  background-position: calc(var(--background-x) * 100cqw / 750) calc(var(--identity-y) * -100cqw / 750);
+}
+.lp-directors-html .lp-director-role,
+.lp-directors-html .lp-director-name,
+.lp-directors-html .lp-director-english {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.lp-directors-html .lp-director-role {
+  font-size: calc(25 * 100cqw / 750);
+  line-height: calc(33 * 100cqw / 750);
+  font-weight: 600;
+  letter-spacing: calc(1.1 * 100cqw / 750);
+}
+.lp-directors-html .lp-director-name {
+  margin-top: calc(7 * 100cqw / 750);
+  font-size: calc(40 * 100cqw / 750);
+  line-height: calc(49 * 100cqw / 750);
+  font-weight: 700;
+  letter-spacing: calc(3 * 100cqw / 750);
+}
+.lp-directors-html .lp-director-english {
+  font-size: calc(29 * 100cqw / 750);
+  line-height: calc(36 * 100cqw / 750);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: calc(1.4 * 100cqw / 750);
+  color: #62728b;
+}
+.lp-directors-html .lp-director-description {
+  top: calc(var(--description-top) * 100cqw / 750);
+  height: calc(var(--description-height) * 100cqw / 750);
+  padding: calc(1 * 100cqw / 750) calc(5 * 100cqw / 750);
+  background-position: calc(var(--background-x) * 100cqw / 750) calc(var(--description-y) * -100cqw / 750);
+  font-size: calc(25 * 100cqw / 750);
+  line-height: calc(37.4 * 100cqw / 750);
+  font-weight: 600;
+  letter-spacing: calc(1 * 100cqw / 750);
+  white-space: nowrap;
+}
+
+body.faithful-landing .lp-directors-html :is(.lp-director-role,.lp-director-name,.lp-director-description){color:#003a70}
+
+body.faithful-landing svg :is(text,tspan){font-family:var(--lp-unified-font)!important}
+@media(max-width:360px){body.faithful-landing .model-before-after th:first-child{width:38%}}
+
+/* Match the quiet backing behind each text block to the adjacent original art. */
+body.faithful-landing .lp-director-identity,body.faithful-landing .lp-director-description{background-size:100% 100%;background-position:0 0}
+.lp-director--urushizawa .lp-director-identity{background-image:linear-gradient(90deg,#f6f3ea,#d9e0e3)}
+.lp-director--urushizawa .lp-director-description{background-image:linear-gradient(90deg,#faf6ea,#e7ebe7)}
+.lp-director--takenouchi .lp-director-identity{background-image:linear-gradient(90deg,#dbe1e4,#f8f4ea)}
+.lp-director--takenouchi .lp-director-description{background-image:linear-gradient(90deg,#f0eee8,#f9f6ea)}
+.lp-director--andou .lp-director-identity{background-image:linear-gradient(90deg,#f9f5ea,#dce2e4)}
+.lp-director--andou .lp-director-description{background-image:linear-gradient(90deg,#faf6ea,#ebede8)}

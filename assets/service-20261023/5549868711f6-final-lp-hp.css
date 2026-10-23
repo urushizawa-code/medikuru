@@ -1,0 +1,156 @@
+/* Final review: preserve each template; adjust only typography and review parts. */
+@font-face {
+  font-family: MedikuruReviewNoto;
+  src: url("https://medikuru.com/assets/service-20261023/116cf62b4cb8-noto-sans-jp-af06c204bf8b.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+html body[data-final-review][data-creative-review] {
+  --review-font: MedikuruReviewNoto, "Hiragino Sans", Meiryo, sans-serif;
+  --hp-type: var(--review-font);
+  font-family: var(--review-font) !important;
+}
+html body[data-final-review][data-creative-review][data-original-revision] :is(#main,header,footer,.lp-fixed-cta) :is(h1,h2,h3,h4,h5,p,span,strong,b,em,small,a,summary,li,dt,dd,th,td,figcaption,button,label,input,select) {
+  font-family: var(--review-font) !important;
+}
+/* Restore the LP's earlier LINE CTA spacing and type treatment. */
+html body[data-final-review][data-creative-review="lp"] .faithful-line-cta .line-cta-pill {
+  padding-inline:5.5cqw!important;
+}
+html body[data-final-review][data-creative-review="lp"][data-original-revision] :is(#main,.lp-fixed-cta) .faithful-line-cta .line-cta-label,
+html body[data-final-review][data-creative-review="lp"][data-original-revision] :is(#main,.lp-fixed-cta) .faithful-line-cta .line-cta-label>span {
+  font-family:"Noto Sans JP","Hiragino Sans",Meiryo,sans-serif!important;
+}
+html body[data-final-review][data-creative-review] #main .hp-contact-options .hp-contact-line,
+html body[data-final-review][data-creative-review] header .hp-contact-line {
+  display:grid!important;grid-template-columns:32px minmax(0,1fr) 32px!important;
+  align-items:center!important;gap:8px!important;padding:15px 12px!important;
+}
+html body[data-final-review][data-creative-review] .hp-line-cta-label {flex-direction:column!important;margin:0!important;}
+html body[data-final-review][data-creative-review] .hp-line-cta-label>span {font-size:18px!important;line-height:1.5!important;}
+html body[data-final-review][data-creative-review] .hp-contact-line::before,
+html body[data-final-review][data-creative-review] .hp-contact-line::after {display:none!important;}
+html body[data-final-review][data-creative-review] .review-line-mark {
+  display:flex;align-items:center;justify-content:center;justify-self:center;
+  width:32px;height:32px;background:#fff;color:#168140;border-radius:50%;
+  font-size:10px!important;font-weight:800;letter-spacing:-.04em;
+  background: url("https://medikuru.com/assets/service-20261023/8ab1ce864b6c-review-line-mark.png") center/125% no-repeat;
+}
+html body[data-final-review][data-creative-review] .review-cta-chevron {justify-self:center;font-size:24px;line-height:1;color:#fff;}
+html body[data-final-review][data-creative-review] .corporate-hero .hero-copy a.mk-hp-zero.mk-zero-line-link {gap:12px;padding:20px 14px!important;margin-inline:auto!important;}
+html body[data-final-review][data-creative-review] .review-hp-cta-row {
+  display:grid!important;grid-template-columns:36px minmax(0,1fr) 36px;
+  align-items:center;gap:8px;width:100%;
+}
+html body[data-final-review][data-creative-review] .review-hp-check-label {font-size:22px!important;line-height:1.5!important;}
+html body[data-final-review][data-creative-review] .review-hp-check-label>span {display:block;white-space:nowrap;}
+html body[data-final-review][data-creative-review] .mk-hp-zero>.review-hp-cta-row {display:grid!important;}
+/* User's latest rule: large digits and units share a baseline. */
+html body[data-final-review][data-creative-review] #faq summary>.review-faq-question {
+  min-width:0;flex:1 1 0!important;white-space:normal!important;
+}
+html body[data-final-review][data-creative-review] #pricing [data-original-single-plan] .mk-plan h3.review-number-line,
+html body[data-final-review][data-creative-review] #main .review-number-line {
+  display:flex!important;align-items:baseline!important;
+}
+html body[data-final-review][data-creative-review] #main .review-number-line> :is(span,small,b,strong) {
+  transform:none!important;position:static!important;align-self:auto!important;
+}
+html body[data-final-review][data-creative-review] #pricing .mk-plan h3 {gap:9px!important;}
+html body[data-final-review][data-creative-review] #pricing .mk-plan h3>strong {font-size:64px!important;line-height:1.15!important;}
+html body[data-final-review][data-creative-review] #pricing .mk-plan h3>span {font-size:22px!important;line-height:1.3!important;}
+html body[data-final-review][data-creative-review] .mk-plan-tax {font-size:15px!important;line-height:1.7!important;}
+html body[data-final-review][data-creative-review] .mk-plan-inherit>span {display:block;margin-top:10px;line-height:1.8;}
+html body[data-final-review][data-creative-review] #pricing .review-keep {display:inline-block!important;white-space:nowrap!important;}
+html body[data-final-review][data-creative-review] #pricing .review-scope-lines {display:block;margin-top:14px;}
+html body[data-final-review][data-creative-review] #pricing .review-scope-lines>span {display:block!important;white-space:nowrap!important;font-size:15px!important;}
+html body[data-final-review][data-creative-review] #pricing :is(.mk-plan-scope,.mk-plan-inherit)>b>span {font-size:17px!important;font-weight:700;}
+html body[data-final-review][data-creative-review] .mk-plan-scope>b,
+html body[data-final-review][data-creative-review] .mk-plan-inherit>b {font-size:17px!important;line-height:1.7!important;}
+html body[data-final-review][data-creative-review] .original-monthly-support .review-media-name {display:inline;white-space:nowrap;}
+html body[data-final-review][data-creative-review] .original-monthly-support>b {font-size:23px!important;line-height:1.65!important;}
+html body[data-final-review][data-creative-review] #pricing :is(.original-monthly-support,.mk-included)>b {font-weight:700;}
+html body[data-final-review][data-creative-review] .original-monthly-support .review-support-title-line {display:block!important;white-space:nowrap;font-size:inherit!important;line-height:inherit!important;}
+html body[data-final-review][data-creative-review] .original-monthly-support>span {font-size:16px!important;line-height:1.85!important;}
+html body[data-final-review][data-creative-review] #report-benefit .entry-copy .review-copy-line {display:block;}
+html body[data-final-review][data-creative-review] #report-benefit .entry-copy .lead {font-size:17px!important;line-height:1.9!important;}
+html body[data-final-review][data-creative-review] #report-benefit .review-phone-score {margin:18px 0;gap:9px;}
+html body[data-final-review][data-creative-review] #report-benefit .review-phone-score>b {font-size:80px;line-height:1.1;}
+html body[data-final-review][data-creative-review] #report-benefit .review-phone-score>span {font-size:19px;line-height:1.3;white-space:nowrap;color:#53657d;}
+html body[data-final-review][data-creative-review] .review-phone-appearance {margin-top:23px;text-align:center;}
+html body[data-final-review][data-creative-review] .review-phone-appearance>span {display:block;font-size:14px;line-height:1.65;}
+html body[data-final-review][data-creative-review] .review-phone-appearance>div {justify-content:center;gap:6px;margin:6px 0;}
+html body[data-final-review][data-creative-review] .review-phone-appearance b {font-size:38px;line-height:1.15;font-weight:800;}
+html body[data-final-review][data-creative-review] #report-benefit .review-phone-plan>b {font-weight:700;}
+html body[data-final-review][data-creative-review] .review-phone-appearance>div>span {font-size:18px;}
+html body[data-final-review][data-creative-review] .review-phone-appearance>small {display:block;font-size:14px;color:#53657d;}
+html body[data-final-review][data-creative-review] #report-benefit .review-phone-example>figcaption {font-size:14px;color:inherit;line-height:1.8;}
+html body[data-final-review][data-creative-review] #report-benefit .review-phone-plan>span {font-size:14px;}
+html body[data-final-review][data-creative-review] #report-benefit .review-consult-intro {max-width:630px;margin:20px auto 28px!important;line-height:1.9!important;}
+html body[data-final-review][data-creative-review] #report-benefit .review-personal-report {max-width:660px;margin:26px auto 30px;}
+html body[data-final-review][data-creative-review] .review-report-kicker {margin-bottom:16px;}
+html body[data-final-review][data-creative-review] .review-report-range>div {align-items:baseline;}
+html body[data-final-review][data-creative-review] .review-report-column>b {align-items:baseline;}
+html body[data-final-review][data-creative-review] #main .review-phone-improve>strong>span {white-space:normal;}
+html body[data-final-review][data-creative-review] #main .mk-lp-plan-bridge {padding-block:18px 22px!important;}
+html body[data-final-review][data-creative-review] #main .mk-lp-plan-bridge>span {font-size:16px!important;line-height:1.7;}
+html body[data-final-review][data-creative-review] #main .mk-lp-plan-bridge>strong {font-size:20px!important;line-height:1.65;}
+html body[data-final-review][data-creative-review] #report-benefit .steps p {font-size:15px!important;line-height:1.6!important;}
+html body[data-final-review][data-creative-review] #report-benefit .steps strong {font-size:18px!important;line-height:1.6!important;}
+html body[data-final-review][data-creative-review] .hp-contact-mobile .hp-contact-line {
+  display:flex!important;flex-direction:column!important;justify-content:center!important;
+  min-height:76px!important;padding:10px 8px!important;
+}
+html body[data-final-review][data-creative-review] .hp-contact-mobile :is(.review-line-mark,.review-cta-chevron) {display:none!important;}
+html body[data-final-review][data-creative-review] .hp-contact-mobile .hp-line-cta-label>span {font-size:15px!important;line-height:1.6!important;}
+html body[data-final-review][data-creative-review] .hp-contact-mobile .button {min-height:76px!important;}
+/* Match the LP's roomier LINE mark, while keeping the HP's own button design. */
+html body[data-final-review][data-creative-review="hp"] #main .hp-contact-options .hp-contact-line,
+html body[data-final-review][data-creative-review="hp"] header .hp-contact-line {
+  grid-template-columns:40px minmax(0,1fr) 12px!important;
+  padding-inline:clamp(18px,5vw,28px)!important;
+}
+html body[data-final-review][data-creative-review="hp"] .review-line-mark {
+  width:40px;height:40px;
+}
+html body[data-final-review][data-creative-review="hp"] .corporate-hero .hero-copy a.mk-hp-zero.mk-zero-line-link {
+  padding-inline:clamp(12px,6vw,28px)!important;
+}
+html body[data-final-review][data-creative-review="hp"] .review-hp-cta-row {
+  grid-template-columns:clamp(28px,9vw,42px) minmax(0,1fr) 10px;
+  gap:6px;
+}
+html body[data-final-review][data-creative-review="hp"] .review-hp-cta-row .review-line-mark {
+  width:100%;height:auto;aspect-ratio:1;
+}
+html body[data-creative-review="hp"] .review-phone-bar>span {transform-origin:left center;}
+html body[data-creative-review="hp"] .review-report-track>i {transform-origin:bottom center;}
+html body[data-creative-review="hp"] :is(.review-phone-score>b,.review-report-column>b>span,.mkc-value>strong) {font-variant-numeric:tabular-nums;}
+@media(max-width:600px) {
+  html body[data-final-review][data-creative-review] .original-monthly-support>b {font-size:21px!important;}
+  html body[data-final-review][data-creative-review] #report-benefit .review-consult-intro {font-size:17px!important;}
+  html body[data-final-review][data-creative-review] #report-benefit .detail8 p {font-size:16px!important;}
+  html body[data-final-review][data-creative-review] #report-benefit .detail8 strong {font-size:20px!important;}
+}
+@media(max-width:360px) {
+  html body[data-final-review][data-creative-review="hp"] .corporate-hero .hero-copy a.mk-hp-zero.mk-zero-line-link {
+    padding-inline:12px!important;
+  }
+  html body[data-final-review][data-creative-review="hp"] #main .hp-contact-options .hp-contact-line,
+  html body[data-final-review][data-creative-review="hp"] header .hp-contact-line {
+    grid-template-columns:28px minmax(0,1fr) 10px!important;
+    padding-inline:16px!important;gap:6px!important;
+  }
+  html body[data-final-review][data-creative-review="hp"] .review-line-mark {width:28px;height:28px;}
+  html body[data-final-review][data-creative-review] .review-line-mark {width:28px;height:28px;font-size:9px!important;}
+  html body[data-final-review][data-creative-review] .hp-line-cta-label>span {font-size:17px!important;}
+  html body[data-final-review][data-creative-review] .review-hp-check-label {font-size:18px!important;}
+  html body[data-final-review][data-creative-review] .review-hp-cta-row {grid-template-columns:28px minmax(0,1fr) 10px;gap:6px;}
+  html body[data-final-review][data-creative-review] #report-benefit .entry-copy .lead {font-size:16px!important;}
+  html body[data-final-review][data-creative-review] #report-benefit .review-phone-screen {padding-inline:12px;}
+  html body[data-final-review][data-creative-review] #report-benefit .review-phone-header {margin-inline:-12px;}
+  html body[data-final-review][data-creative-review] #report-benefit .review-phone-improve>strong {font-size:15px;}
+  html body[data-final-review][data-creative-review] #pricing .mk-plan h3>strong {font-size:58px!important;}
+  html body[data-final-review][data-creative-review] #pricing .mk-plan h3>span {font-size:20px!important;}
+}

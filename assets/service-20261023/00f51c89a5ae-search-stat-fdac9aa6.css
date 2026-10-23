@@ -1,0 +1,79 @@
+.search-stat {
+  --search-stat-navy: #152b67;
+  --search-stat-gold: #bda150;
+  --search-stat-blue: #2364bb;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 46px 28px 30px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  color: var(--search-stat-navy);
+  background: radial-gradient(ellipse at 50% 45%, #fff 0%, #f3f8fd 49%, #eaf2fb 100%);
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.search-stat *, .search-stat *::before, .search-stat *::after { box-sizing: border-box; }
+.search-stat__intro { position: relative; z-index: 1; }
+.search-stat__eyebrow {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: .18em;
+  color: #627896;
+}
+.search-stat__title {
+  margin: 0;
+  font-size: clamp(29px, 5.87vw, 44px);
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: .015em;
+}
+.search-stat__title span { color: var(--search-stat-blue); }
+.search-stat__figure { margin: 23px 0 0; }
+.search-stat__chart { width: 326px; height: 326px; margin: 0 auto; position: relative; }
+.search-stat__ring { display: block; width: 100%; height: 100%; overflow: visible; transform: rotate(-90deg); }
+.search-stat__track, .search-stat__progress { fill: none; stroke-width: 14; }
+.search-stat__track { stroke: #dae6f2; }
+.search-stat__progress { stroke: var(--search-stat-blue); stroke-linecap: round; }
+.search-stat__metric { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 8px; }
+.search-stat__metric-label { font-size: 16px; line-height: 1.4; font-weight: 700; letter-spacing: .08em; }
+.search-stat__value { display: flex; align-items: baseline; justify-content: center; margin: -1px 0 0; height: 128px; font-family: Arial, "Helvetica Neue", sans-serif; font-size: 128px; line-height: 1; font-weight: 700; letter-spacing: -.07em; font-variant-numeric: tabular-nums; }
+.search-stat__percent { margin-left: 7px; font-size: 40px; letter-spacing: -.025em; color: var(--search-stat-gold); }
+.search-stat__metric-detail { font-size: 13px; line-height: 1.5; font-weight: 500; letter-spacing: .04em; color: #6c7d96; }
+.search-stat__people { display: flex; justify-content: center; gap: 10px; margin: 19px auto 0; }
+.search-stat__person { display: block; width: 24px; height: 44px; flex: 0 0 24px; fill: #d3dfeb; }
+.search-stat__person.is-active { fill: var(--search-stat-blue); }
+.search-stat__caption { display: flex; justify-content: center; align-items: baseline; gap: 4px; margin: 13px 0 0; font-size: 20px; font-weight: 700; line-height: 1.5; letter-spacing: .01em; }
+.search-stat__caption strong { color: var(--search-stat-blue); font-size: 29px; line-height: 1.25; }
+.search-stat__label { margin: 17px 0 0; font-size: 13px; line-height: 1.5; letter-spacing: .02em; color: #718198; }
+.search-stat__replay { display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 36px; margin: 8px 0 0; padding: 6px 12px; border: 0; border-radius: 999px; background: transparent; color: #566d8b; font: inherit; font-size: 12px; line-height: 1.5; cursor: pointer; touch-action: manipulation; }
+.search-stat__replay[hidden] { display: none; }
+.search-stat__replay:hover { color: var(--search-stat-navy); background: #dde9f6; }
+.search-stat__replay:focus-visible { outline: 2px solid var(--search-stat-blue); outline-offset: 2px; }
+@media (max-width: 480px) {
+  .search-stat { padding: 32px 18px 21px; }
+  .search-stat__eyebrow { margin-bottom: 9px; font-size: 11px; letter-spacing: .13em; }
+  .search-stat__title { font-size: 30px; line-height: 1.36; }
+  .search-stat__figure { margin-top: 16px; }
+  .search-stat__chart { width: 250px; height: 250px; }
+  .search-stat__metric { padding-top: 7px; }
+  .search-stat__metric-label { font-size: 12px; }
+  .search-stat__value { font-size: 100px; height: 101px; }
+  .search-stat__percent { font-size: 31px; margin-left: 5px; }
+  .search-stat__metric-detail { font-size: 10px; }
+  .search-stat__people { gap: 8px; margin-top: 12px; }
+  .search-stat__person { width: 19px; height: 34px; flex-basis: 19px; }
+  .search-stat__caption { margin-top: 9px; font-size: 16px; gap: 3px; }
+  .search-stat__caption strong { font-size: 24px; }
+  .search-stat__label { margin-top: 12px; font-size: 10px; }
+  .search-stat__replay { margin-top: 4px; font-size: 11px; min-height: 34px; }
+}
+@media (max-width: 350px) {
+  .search-stat__title { font-size: 27px; }
+  .search-stat__people { gap: 6px; }
+  .search-stat__caption { font-size: 14px; }
+}

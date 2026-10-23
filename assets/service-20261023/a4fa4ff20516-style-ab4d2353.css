@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/*-----------------------------------------------
+	全体
+---------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  
+  background-position: top center;
+  background-repeat: repeat;/*繰り返さない場合は no-repeat*/
+  background-attachment: fixed;/*背景を固定しない場合は消す*/
+  background-size: auto;/*背景を画面いっぱいに広げる場合はcover*/
+
+  font-size: 16px;
+  font-family: 'Helvetica','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  color: #333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+div {
+  margin: 0 auto;
+}
+
+.container {
+	max-width: 750px;/* コンテンツ幅 */
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  margin: 0 auto;
+}
+
+/*-----------------------------------------------
+	ボタンとフォーム
+---------------------------------------------- */
+.cta {
+  position: relative;
+}
+
+/* ボタン */
+.btn {
+	position: absolute;
+  width: 90%;/* ボタンの大きさ */
+  bottom: 0%;/* ボタンの位置 */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation-name: pulse;/* アニメーション名 */
+  animation-duration: 1s;/* アニメーションの間隔(秒) */
+  animation-iteration-count: infinite;
+}
+
+.btn1 {
+	position: absolute;
+  width: 90%;/* ボタンの大きさ */
+  bottom: 9%;/* ボタンの位置 */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation-name: pulse;/* アニメーション名 */
+  animation-duration: 1s;/* アニメーションの間隔(秒) */
+  animation-iteration-count: infinite;
+}
+
+.btn3 {
+	position: absolute;
+  width: 90%;/* ボタンの大きさ */
+  bottom: 15%;/* ボタンの位置 */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation-name: pulse;/* アニメーション名 */
+  animation-duration: 1s;/* アニメーションの間隔(秒) */
+  animation-iteration-count: infinite;
+}
+
+.btn2 {
+	position: absolute;
+  width: 90%;/* ボタンの大きさ */
+  bottom: 25%;/* ボタンの位置 */
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  animation-name: pulse;/* アニメーション名 */
+  animation-duration: 1s;/* アニメーションの間隔(秒) */
+  animation-iteration-count: infinite;
+}
+
+@media (hover:hover) {
+  .btn:hover,
+  .form_btn:hover {
+    filter:brightness(1.2);/* マウスオンでボタンを明るくする */
+  }
+}
+
+/* フォームタグ */
+form {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 10%;/* フォームの位置 */
+  left: 0%;
+  right: 0%;
+}
+
+/* フォーム入力欄 */
+.mail {
+  width: 90%;/* 入力欄の大きさ */
+  aspect-ratio: 8 / 1;/* 縦横比 */
+  font-size: 20px;
+  border-radius: 6px;
+  margin-bottom: 3%;/* ボタンまでの余白の大きさ */
+  text-align: center;
+  border: solid 3px #fcc786;
+}
+/* フォームボタン */
+button {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+}
+.form_btn {
+  width:90%;/* ボタンの大きさ */
+  animation-name: pulse;/* アニメーション名 */
+  animation-duration: 1s;/* アニメーションの間隔(秒) */
+  animation-iteration-count: infinite;  
+}
+
+/*-----------------------------------------------
+	テキストコーディング用
+---------------------------------------------- */
+
+/* ------------ 文章・文字装飾 ------------ */
+.text {
+  padding: 0 3%;
+  text-align: left;
+}
+p {
+  padding-bottom: 1.6em;
+}
+p:last-of-type {
+  padding-bottom: 1em;
+}
+.red {
+  color: #E30003;
+}
+.marker {
+  background: linear-gradient(transparent 55%, #fffc79 55%);
+}
+
+/* ------------ 枠 ------------ */
+.box-top {
+  background: url("") no-repeat center bottom / 100% 100%;
+  aspect-ratio: 0 / 0; /* 画像の実寸比率（横/縦） */
+}
+.box-body {
+  background: url("") repeat-y center top / contain; /* 背景画像を入れる */
+}
+.box-bottom {
+  background: url("") no-repeat center top / 100% 100%;
+  aspect-ratio: 0 / 0; /* 画像の実寸比率（横/縦） */
+}
+
+
+/*-----------------------------------------------
+	フッター
+---------------------------------------------- */
+.footer {
+  background-color: #102a6b;
+  padding: 15px 10px;
+	color: #fff;
+	line-height: 2;
+  font-size: 14px;
+}
+.footer a,
+.copyright {
+  color: #fff;
+}
+.footer a {
+  display: inline-block;
+  text-decoration: underline;
+}
+.footer p {
+  padding: 0;
+}
+.copyright {
+  text-align: center;
+}
+
+
+/*-----------------------------------------------
+	スマホ
+---------------------------------------------- */
+@media screen and (min-width: 751px) {
+	.sp_only {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+	.pc_only {
+    display: none;
+  }
+  .space_sp {
+    display: block;
+    height: 1.6em;
+  }
+	
+	/* フォーム入力欄 */
+	.mail {
+		font-size: 16px;
+		border-radius: 2px;
+		border-width: 2px;/* 枠線の太さ */
+	}  
+  
+}

@@ -1,0 +1,351 @@
+/* Proposal component adjustments only. Original HP design and portraits remain intact. */
+body.hp-adopted-proposal .hero .hero-copy {max-width:100%;}
+body.hp-adopted-proposal .hero .mk-adcost-wish {font-size:clamp(17px,1.65vw,21px)!important;font-weight:800;color:#172f67;line-height:1.8!important;margin-bottom:20px;border-bottom:0!important;}
+body.hp-adopted-proposal .hero .mk-adcost-wish u {text-decoration-thickness:1px;text-underline-offset:.22em;}
+html body.hp-adopted-proposal .hero h1.proposal-title {display:flex!important;flex-direction:column;align-items:center;gap:14px!important;font-size:clamp(22px,3.1vw,43px)!important;font-weight:900!important;line-height:1.45!important;text-align:center!important;letter-spacing:-.035em!important;margin:28px auto!important;}
+body.hp-adopted-proposal .hero .hp-new-line {display:block;font:inherit!important;color:#172f67!important;white-space:nowrap;}
+body.hp-adopted-proposal .hero .hp-new-time {display:flex;justify-content:center;align-items:baseline!important;gap:.14em;line-height:1;color:#172f67;font-size:1.02em;}
+body.hp-adopted-proposal .hero .hp-new-time strong {font-size:2.28em;font-weight:900;color:#ab893e;line-height:1.1;letter-spacing:-.05em;font-variant-numeric:tabular-nums;}
+body.hp-adopted-proposal .hero .hp-new-time span {font:inherit;font-weight:900;}
+body.hp-adopted-proposal .hero .proposal-hero-lead {font-size:clamp(20px,2.1vw,28px)!important;display:flex;flex-direction:column;align-items:center;gap:.08em;line-height:1.3!important;font-weight:800!important;text-align:center!important;color:#172f67;margin:26px auto!important;}
+body.hp-adopted-proposal .hero .proposal-hero-lead>span,body.hp-adopted-proposal .hero .proposal-hero-lead>strong {display:block;margin:0;padding:0;line-height:1.3!important;}
+body.hp-adopted-proposal .hero .proposal-hero-lead sup {font-size:14px;}
+body.hp-adopted-proposal .hero .mk-method-title {font-size:clamp(17px,1.8vw,24px)!important;font-weight:900!important;}
+body.hp-adopted-proposal .hero .mk-method-caption {font-size:clamp(16px,1.6vw,21px)!important;font-weight:800!important;}
+body.hp-adopted-proposal .review-hp-check-question {font-size:clamp(17px,1.8vw,21px)!important;font-weight:800!important;}
+body.hp-adopted-proposal .review-hp-check-label,body.hp-adopted-proposal .hp-line-cta-label {font-size:clamp(18px,1.7vw,24px)!important;line-height:1.5!important;font-weight:900!important;}
+body.hp-adopted-proposal .proposal-industry-note {font-size:16px;color:#344b70;line-height:1.8;max-width:980px;}
+body.hp-adopted-proposal #report-benefit .entry {align-items:center;gap:45px;}
+body.hp-adopted-proposal #report-benefit .entry-copy {min-width:0;text-align:left;}
+body.hp-adopted-proposal #report-benefit .proposal-label {font-size:19px;color:#785b23;font-weight:900;}
+body.hp-adopted-proposal #report-benefit .entry-copy h2 {font-size:clamp(29px,3vw,40px)!important;line-height:1.5!important;}
+body.hp-adopted-proposal #report-benefit .entry-copy .lead {font-size:23px;font-weight:800;line-height:1.65;color:#172f67;}
+body.hp-adopted-proposal #report-benefit .proposal-body {font-size:18px;line-height:1.8;color:#344b70;}
+body.hp-adopted-proposal #report-benefit .uc-diagnosis-items {list-style:none;padding:0;margin:28px 0;counter-reset:diagnosis;}
+body.hp-adopted-proposal #report-benefit .uc-diagnosis-items li {position:relative;padding:16px 0 16px 43px;border-bottom:1px solid #d8d0bd;counter-increment:diagnosis;}
+body.hp-adopted-proposal #report-benefit .uc-diagnosis-items li::before {content:counter(diagnosis,decimal-leading-zero);position:absolute;left:0;top:17px;color:#856523;font-size:20px;font-weight:900;}
+body.hp-adopted-proposal #report-benefit .uc-diagnosis-items b {display:block;font-size:20px;font-weight:900;line-height:1.6;color:#172f67;}
+body.hp-adopted-proposal #report-benefit .uc-diagnosis-items span {display:block;margin-top:4px;font-size:18px;font-weight:700;line-height:1.6;color:#344b70;}
+body.hp-adopted-proposal .proposal-routes article {padding:24px;}
+body.hp-adopted-proposal .proposal-routes .proposal-label {font-size:19px;font-weight:900;color:#806022;}
+body.hp-adopted-proposal .proposal-routes p {font-size:19px;font-weight:700;color:#344b70;line-height:1.8;}
+body.hp-adopted-proposal #services .section-heading>p,body.hp-adopted-proposal .closing-section>div>p:not(.eyebrow) {font-size:21px;font-weight:700;line-height:1.8;}
+body.hp-adopted-proposal #services .section-heading .eyebrow {font-size:20px;color:#785b23;font-weight:900;}
+body.hp-adopted-proposal .service-card>p {font-size:19px;line-height:1.8;font-weight:600;}
+body.hp-adopted-proposal .service-card.dark-service>p {color:#fff;}
+body.hp-adopted-proposal #monthly-support .proposal-support-list p {font-size:19px;font-weight:700;line-height:1.8;color:#344b70;}
+body.hp-adopted-proposal .proposal-price-card p,body.hp-adopted-proposal .proposal-option p,body.hp-adopted-proposal .proposal-terms p {font-size:18px;line-height:1.8;color:#344b70;}
+body.hp-adopted-proposal .proposal-price {align-items:center;}
+body.hp-adopted-proposal .proposal-note {font-size:16px!important;line-height:1.8;color:#344b70;}
+body.hp-adopted-proposal .hp-report-sample {margin:35px auto;background:#fff;padding:38px 24px;max-width:850px;border-top:3px solid #b39142;text-align:center;}
+body.hp-adopted-proposal .hp-report-sample>h3 {font-size:clamp(27px,3.4vw,38px)!important;font-weight:900!important;line-height:1.5!important;margin:14px 0!important;color:#172f67;}
+body.hp-adopted-proposal .hp-report-sample>p {font-size:19px;font-weight:700;color:#344b70;line-height:1.75;}
+body.hp-adopted-proposal .hp-report-sheets {position:relative;max-width:520px;height:330px;margin:32px auto 38px;}
+body.hp-adopted-proposal .hp-report-page {position:absolute;width:200px;height:283px;object-fit:cover;top:20px;left:calc(50% - 100px);border:1px solid #d8d3c5;box-shadow:0 10px 20px #172f6720;transform-origin:bottom center;}
+body.hp-adopted-proposal .hp-report-page:nth-child(1) {transform:translateX(-90px) rotate(-12deg);}
+body.hp-adopted-proposal .hp-report-page:nth-child(2) {transform:translateY(-10px);}
+body.hp-adopted-proposal .hp-report-page:nth-child(3) {transform:translateX(90px) rotate(12deg);}
+body.hp-adopted-proposal .hp-report-sample .hp-report-size {font-size:21px;font-weight:900;color:#172f67;}
+body.hp-adopted-proposal .hp-report-sample summary {font-size:19px;font-weight:800;cursor:pointer;padding:16px;color:#172f67;}
+body.hp-adopted-proposal .hp-report-gallery {display:grid;gap:14px;grid-template-columns:repeat(3,minmax(0,1fr));}
+body.hp-adopted-proposal .hp-report-gallery-page {display:block;width:100%;height:auto;}
+body.hp-adopted-proposal .hp-video-placeholder {position:relative;display:grid;gap:24px;grid-template-columns:1fr;min-height:280px;padding:28px;background:#172f67;color:#fff;text-align:center;}
+body.hp-adopted-proposal .hp-video-placeholder img {width:100%;max-height:260px;object-fit:contain;opacity:.7;}
+body.hp-adopted-proposal .hp-video-placeholder p {font-size:21px;line-height:1.7;color:#fff;}
+body.hp-adopted-proposal .hp-video-placeholder a {color:#f0d98e;font-weight:800;font-size:19px;}
+body.hp-adopted-proposal #service-video .mk-narration__player {aspect-ratio:auto;}
+body.hp-adopted-proposal .mobile-cta {left:0!important;right:0!important;width:100%!important;margin:0!important;}
+body.hp-adopted-proposal .mobile-cta .hp-contact-options {margin:auto!important;}
+@media(max-width:700px){
+ html body.hp-adopted-proposal .hero h1.proposal-title {font-size:clamp(20px,5.15vw,31px)!important;gap:13px!important;letter-spacing:-.045em!important;}
+ body.hp-adopted-proposal .hero .proposal-hero-lead {padding:0!important;font-size:20px!important;}
+ body.hp-adopted-proposal .hero .mk-adcost-wish {font-size:17px!important;}
+ body.hp-adopted-proposal #report-benefit .entry {display:grid;grid-template-columns:1fr;gap:16px;}
+ body.hp-adopted-proposal .hp-report-sheets {max-width:300px;height:270px;}
+ body.hp-adopted-proposal .hp-report-page {width:150px;height:212px;left:calc(50% - 75px);}
+ body.hp-adopted-proposal .hp-report-page:nth-child(1) {transform:translateX(-55px) rotate(-10deg);}
+ body.hp-adopted-proposal .hp-report-page:nth-child(3) {transform:translateX(55px) rotate(10deg);}
+ body.hp-adopted-proposal .hp-report-sample {padding:26px 16px;}
+ body.hp-adopted-proposal .hp-report-gallery {grid-template-columns:1fr;}
+ body.hp-adopted-proposal .proposal-price-card {padding:24px 18px;}
+}
+@media(prefers-reduced-motion:reduce){body.hp-adopted-proposal *,body.hp-adopted-proposal *::before,body.hp-adopted-proposal *::after {animation:none!important;transition:none!important;}}
+
+/* Focused components avoid the old steps/detail8/phone layout rules. */
+html body.hp-adopted-proposal #report-benefit .uc-diagnostic-preview { margin:28px 0 38px; padding:0; border:0; background:none; }
+html body.hp-adopted-proposal #report-benefit .uc-device-figure { width:min(100%,360px); margin:0 auto; padding:0; }
+html body.hp-adopted-proposal #report-benefit .uc-device { position:relative; overflow:hidden; isolation:isolate; padding:26px 6px 9px; background:#142a4b; border:3px solid #142a4b; border-radius:34px; box-shadow:0 18px 32px #172f6724; }
+html body.hp-adopted-proposal #report-benefit .uc-device-speaker { position:absolute; top:10px; left:50%; transform:translateX(-50%); width:56px; height:4px; border-radius:5px; background:#899ab4; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard { overflow:hidden; border-radius:25px; background:#fff; color:#172f67; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-hero { background:#1a3561; padding:17px 20px 15px; text-align:center; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-meta { display:flex; justify-content:space-between; align-items:center; gap:10px; color:#e0e7f1; font-size:15px; line-height:1.4; font-weight:700; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-meta>span:last-child { border:1px solid #a5b2c8; padding:3px 10px; border-radius:20px; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard h3 { font-size:22px!important; line-height:1.5!important; font-weight:900!important; margin:0!important; padding:0!important; letter-spacing:-.02em!important; text-align:center!important; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-hero h3 { color:#fff!important; margin:14px 0 5px!important; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-score { position:relative; width:100%; max-width:260px; margin:0 auto; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-score>svg { display:block; width:100%; height:auto; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-value { position:absolute; inset:29% 0 4%; width:auto; margin:0; padding:0; transform:none; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; color:#fff; text-align:center; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-value>b { display:block; width:max-content; margin:0; padding:0; font-family:inherit; font-weight:900; font-size:clamp(64px,20vw,82px); line-height:1; letter-spacing:0; font-variant-numeric:tabular-nums; text-align:center; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-value>.uc-dashboard-total { position:relative; display:block; width:max-content; margin:0; padding:0; font-size:18px; font-weight:700; line-height:1.25; letter-spacing:0; color:#dde6f5; text-align:center; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-total>i { position:absolute; inset-inline-end:calc(100% + .08em); top:0; font:inherit; font-style:normal; color:inherit; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-chart { padding:22px 20px 19px; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-chart h3 { color:#172f67!important; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-chart .uc-dashboard-chart-lead { font-size:17px!important; line-height:1.5!important; font-weight:800!important; text-align:center!important; color:#886724!important; margin:5px 0 16px!important; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-bars { display:flex; justify-content:center; align-items:flex-end; gap:40px; padding:0 18px 43px; height:183px; position:relative; background:repeating-linear-gradient(to top,transparent 0,transparent 44px,#e8edf4 44px,#e8edf4 45px); border-bottom:1px solid #dce3ef; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-bars>div { position:relative; display:flex; flex-direction:column; width:84px; max-width:42%; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-bar-stack { display:flex; flex-direction:column; width:100%; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-bar-base { height:54px; background:#253f6e; border-radius:7px 7px 0 0; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-bar-after .uc-dashboard-bar-base { border-radius:0; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-bar-gain { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px; height:78px; background:#d7bb71; color:#3e3218; border-radius:7px 7px 0 0; font-size:15px; font-weight:900; line-height:1.4; border-bottom:2px solid #fff; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-bar-gain i { font-size:24px; font-style:normal; line-height:1; font-weight:700; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-bars>div>b { position:absolute; top:calc(100% + 8px); width:100%; text-align:center; color:#172f67; font-size:18px; font-weight:900; white-space:nowrap; line-height:1.4; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard-bars>div>b>span { display:block; font-size:14px; font-weight:700; line-height:1.1; }
+html body.hp-adopted-proposal #report-benefit .uc-dashboard .uc-dashboard-chart-note { margin:11px 0 0!important; color:#5b6981!important; font-size:15px!important; line-height:1.5!important; font-weight:700!important; text-align:center!important; }
+
+html body.hp-adopted-proposal #report-benefit .uc-flow-section { margin:35px 0; padding:28px 20px; background:#172f67; border-radius:16px; }
+html body.hp-adopted-proposal #report-benefit .uc-flow-section>h3 { display:flex; align-items:center; justify-content:center; gap:.3em; margin:0 0 22px!important; color:#ead08b!important; font-size:32px!important; line-height:1.4!important; font-weight:900!important; text-align:center!important; }
+html body.hp-adopted-proposal #report-benefit .uc-flow-section>h3>span { color:#fff; font-size:23px; }
+html body.hp-adopted-proposal #report-benefit .uc-flow-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin:0; padding:0; list-style:none; }
+html body.hp-adopted-proposal #report-benefit .uc-flow-item { display:flex; flex-direction:column; align-items:center; justify-content:flex-start; gap:0; min-width:0; margin:0; padding:20px 10px 21px; background:#fff; border-radius:10px; color:#172f67; }
+html body.hp-adopted-proposal #report-benefit .uc-flow-visual { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; margin:0 0 12px; }
+html body.hp-adopted-proposal #report-benefit .uc-flow-number { display:grid; place-items:center; position:static; flex:none; width:40px; height:40px; font-family:inherit; font-size:25px; font-weight:900; line-height:1; color:#fff; background:#172f67; border-radius:50%; }
+html body.hp-adopted-proposal #report-benefit .uc-flow-visual img { display:block; width:90px; height:70px; margin:0; object-fit:contain; }
+html body.hp-adopted-proposal #report-benefit .uc-flow-item h4 { color:#172f67!important; font-size:28px!important; font-weight:900!important; margin:0!important; padding:0!important; line-height:1.5!important; text-align:center!important; white-space:nowrap; }
+html body.hp-adopted-proposal #report-benefit .uc-flow-item p { color:#344b70!important; font-size:20px!important; font-weight:800!important; margin:5px 0 0!important; padding:0!important; line-height:1.5!important; text-align:center!important; }
+
+html body.hp-adopted-proposal #report-benefit .uc-paths { display:grid; grid-template-columns:1fr; gap:0; margin:24px 0 8px; padding:0; }
+html body.hp-adopted-proposal #report-benefit .uc-path { display:grid; grid-template-columns:110px minmax(0,1fr); column-gap:22px; row-gap:8px; align-items:center; padding:24px 8px; background:none; border:0; border-bottom:1px solid #d3cdbd; border-radius:0; box-shadow:none; }
+html body.hp-adopted-proposal #report-benefit .uc-path>img { grid-column:1; grid-row:1/3; display:block; width:110px; height:100px; margin:0; object-fit:contain; }
+html body.hp-adopted-proposal #report-benefit .uc-path .proposal-label { grid-column:2; color:#856523!important; font-size:20px!important; font-weight:900!important; margin:0!important; line-height:1.4!important; }
+html body.hp-adopted-proposal #report-benefit .uc-path h3 { grid-column:2; color:#172f67!important; font-size:28px!important; font-weight:900!important; line-height:1.5!important; margin:0!important; text-align:left!important; }
+html body.hp-adopted-proposal #report-benefit .uc-path p { grid-column:2; color:#344b70!important; font-size:21px!important; font-weight:700!important; line-height:1.65!important; margin:3px 0 0!important; text-align:left!important; }
+@media(max-width:600px) {
+ html body.hp-adopted-proposal #report-benefit .uc-flow-section { padding:25px 16px; }
+ html body.hp-adopted-proposal #report-benefit .uc-flow-list { grid-template-columns:1fr; gap:14px; }
+ html body.hp-adopted-proposal #report-benefit .uc-flow-item { padding:16px 12px 19px; }
+ html body.hp-adopted-proposal #report-benefit .uc-flow-visual { margin-bottom:5px; gap:17px; }
+ html body.hp-adopted-proposal #report-benefit .uc-flow-number { width:45px; height:45px; font-size:28px; }
+ html body.hp-adopted-proposal #report-benefit .uc-flow-visual img { width:106px; height:78px; }
+ html body.hp-adopted-proposal #report-benefit .uc-flow-item h4 { font-size:30px!important; }
+ html body.hp-adopted-proposal #report-benefit .uc-flow-item p { font-size:22px!important; }
+ html body.hp-adopted-proposal #report-benefit .uc-flow-section>h3 { flex-direction:column; gap:1px; font-size:34px!important; }
+ html body.hp-adopted-proposal #report-benefit .uc-path { grid-template-columns:78px minmax(0,1fr); column-gap:14px; padding:22px 0; }
+ html body.hp-adopted-proposal #report-benefit .uc-path>img { grid-row:1; width:78px; height:62px; }
+ html body.hp-adopted-proposal #report-benefit .uc-path h3 { grid-column:1/-1; font-size:27px!important; }
+ html body.hp-adopted-proposal #report-benefit .uc-path p { grid-column:1/-1; font-size:21px!important; }
+}
+
+/* Five source-native diagrams adapted from the approved business-structure PDF. */
+.hp-adopted-proposal .hp-business-diagram {max-width:1080px;margin:34px auto 44px;color:#172f67;text-align:center;}
+.hp-adopted-proposal .hp-business-source {display:grid;grid-template-columns:1fr 48px 1fr;align-items:center;gap:20px;background:#f6f3e9;padding:28px;border-radius:16px;}
+.hp-adopted-proposal .hp-business-source>div {display:grid;grid-template-columns:86px 1fr;align-items:center;text-align:left;column-gap:18px;}
+.hp-adopted-proposal .hp-business-source img {grid-row:1/3;width:86px;height:82px;object-fit:contain;}
+.hp-adopted-proposal .hp-business-source span {font-size:19px;line-height:1.5;font-weight:800;color:#76591f;}
+.hp-adopted-proposal .hp-business-source b {font-size:25px;line-height:1.5;font-weight:900;}
+.hp-adopted-proposal .hp-diagram-arrow {font-size:38px!important;font-weight:500!important;color:#a78534!important;text-align:center;}
+.hp-adopted-proposal .hp-business-bridge {font-size:21px;line-height:1.5;font-weight:800;margin:20px 0;color:#172f67;}
+.hp-adopted-proposal .hp-business-bridge>span {display:block;font-size:32px;color:#aa8738;line-height:1.3;}
+.hp-adopted-proposal .hp-business-branches {display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.hp-adopted-proposal .hp-business-branches article {position:relative;background:#172f67;color:#fff;padding:30px 24px;border-radius:14px;}
+.hp-adopted-proposal .hp-business-branches article>img {width:110px;height:90px;object-fit:contain;padding:8px;background:#fff;border-radius:10px;margin:0 auto 12px;}
+.hp-adopted-proposal .hp-diagram-label {font-size:20px!important;font-weight:900!important;line-height:1.5!important;color:#876323;margin:10px 0!important;}
+.hp-adopted-proposal .hp-business-branches .hp-diagram-label {color:#f0d78e;}
+.hp-adopted-proposal .hp-business-branches h3 {font-size:26px!important;line-height:1.5!important;font-weight:900;color:#fff;margin:10px 0!important;}
+.hp-adopted-proposal .hp-business-branches p {font-size:20px;color:#fff;line-height:1.8;font-weight:700;}
+.hp-adopted-proposal .hp-business-branches .hp-search-query {display:inline-block;background:#fff;color:#172f67;padding:7px 20px;border-radius:22px;font-size:18px;margin:12px 0;}
+.hp-adopted-proposal .hp-consult-journey {display:grid;grid-template-columns:repeat(3,1fr);gap:30px;list-style:none;padding:0;margin:28px auto;max-width:940px;}
+.hp-adopted-proposal .hp-consult-journey li {position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:#f3f5f9;border:1px solid #d6deea;border-radius:12px;padding:24px 14px;}
+.hp-adopted-proposal .hp-consult-journey li:not(:last-child)::after {content:'→';position:absolute;right:-25px;font-size:28px;top:45%;color:#aa8738;}
+.hp-adopted-proposal .hp-consult-journey img {width:86px;height:72px;object-fit:contain;margin-bottom:5px;}
+.hp-adopted-proposal .hp-consult-journey b {font-size:22px;color:#172f67;font-weight:900;line-height:1.5;}
+.hp-adopted-proposal .hp-consult-journey span {font-size:18px;color:#344b70;font-weight:700;line-height:1.6;}
+.hp-adopted-proposal .hp-fee-timeline {margin:32px 0;padding:30px 24px;background:#172f67;color:#fff;border-radius:14px;}
+.hp-adopted-proposal .hp-fee-timeline>h3 {font-size:26px!important;font-weight:900!important;text-align:center;color:#fff;margin:0 0 24px;line-height:1.5;}
+.hp-adopted-proposal .hp-fee-stages {display:grid;grid-template-columns:1fr 42px 1fr;gap:12px;align-items:center;}
+.hp-adopted-proposal .hp-fee-stages article {padding:26px 16px;background:#fff;color:#172f67;border-radius:10px;text-align:center;}
+.hp-adopted-proposal .hp-fee-stages article:first-child {background:#f5ebce;}
+.hp-adopted-proposal .hp-fee-stages b {display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px;font-size:20px;line-height:1.3;}
+.hp-adopted-proposal .hp-fee-stages strong {font-size:42px;font-weight:900;color:#172f67;}
+.hp-adopted-proposal .hp-fee-stages article p {font-size:18px;line-height:1.7;font-weight:700;color:#344b70;margin:16px 0 0;}
+.hp-adopted-proposal .hp-fee-timeline .hp-fee-footnote {font-size:16px;line-height:1.8;color:#fff;margin:22px 0 0;}
+.hp-adopted-proposal .hp-cycle {max-width:1080px;margin:32px auto 0;}
+.hp-adopted-proposal .hp-cycle-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;list-style:none;padding:0;}
+.hp-adopted-proposal .hp-cycle-grid li {display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;padding:28px 18px;background:#fff;border:1px solid #d6deea;border-top:4px solid #af8a3d;border-radius:10px;}
+.hp-adopted-proposal .hp-cycle-no {align-self:flex-start;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;font-size:23px;font-weight:900;background:#172f67;color:#fff;}
+.hp-adopted-proposal .hp-cycle-grid img {width:105px;height:85px;object-fit:contain;margin:2px auto 12px;}
+.hp-adopted-proposal .hp-cycle-grid h3 {font-size:23px!important;font-weight:900!important;line-height:1.5!important;color:#172f67;margin:10px 0!important;}
+.hp-adopted-proposal .hp-cycle-grid p {font-size:18px;line-height:1.65;color:#344b70;font-weight:700;margin:0;}
+.hp-adopted-proposal .hp-cycle-return {display:flex;align-items:center;justify-content:center;gap:12px;padding:18px 20px;background:#172f67;color:#fff;font-size:22px;font-weight:800;line-height:1.5;border-radius:10px;margin:24px 0;}
+.hp-adopted-proposal .hp-cycle-return span {font-size:40px;color:#e9cd82;}
+.hp-adopted-proposal .hp-cycle-detail summary {font-size:19px;color:#172f67;font-weight:800;padding:16px;cursor:pointer;}
+.hp-adopted-proposal .hp-roadmap-diagram {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;margin:32px auto;}
+.hp-adopted-proposal .hp-roadmap-diagram article {position:relative;padding:28px 20px;background:#fff;border:1px solid #d7d0bd;border-top:4px solid #af8a3d;border-radius:10px;}
+.hp-adopted-proposal .hp-roadmap-diagram article:last-child {background:#f8f3e5;}
+.hp-adopted-proposal .hp-roadmap-diagram img {width:110px;height:88px;display:block;object-fit:contain;margin:0 auto 18px;}
+.hp-adopted-proposal .hp-roadmap-diagram h3 {font-size:24px!important;line-height:1.5!important;font-weight:900!important;color:#172f67;}
+.hp-adopted-proposal .hp-roadmap-diagram p {font-size:18px;color:#344b70;font-weight:700;line-height:1.8;margin-top:14px;}
+@media(max-width:900px){
+ .hp-adopted-proposal .hp-cycle-grid {grid-template-columns:repeat(2,minmax(0,1fr));}
+ .hp-adopted-proposal .hp-business-source>div {grid-template-columns:1fr;text-align:center;}
+ .hp-adopted-proposal .hp-business-source img {grid-row:auto;justify-self:center;margin-bottom:12px;}
+ .hp-adopted-proposal .hp-roadmap-diagram {grid-template-columns:1fr;}
+ .hp-adopted-proposal .hp-roadmap-diagram article {display:grid;grid-template-columns:100px 1fr;column-gap:22px;align-items:center;}
+ .hp-adopted-proposal .hp-roadmap-diagram img {grid-column:1;grid-row:1/4;width:100px;margin:0;}
+ .hp-adopted-proposal .hp-roadmap-diagram article p,.hp-adopted-proposal .hp-roadmap-diagram article h3 {grid-column:2;margin:5px 0!important;}
+}
+@media(max-width:700px){
+ .hp-adopted-proposal .hp-business-source,.hp-adopted-proposal .hp-business-branches,.hp-adopted-proposal .hp-fee-stages,.hp-adopted-proposal .hp-cycle-grid,.hp-adopted-proposal .hp-consult-journey {grid-template-columns:1fr;}
+ .hp-adopted-proposal .hp-business-source {gap:8px;padding:24px 16px;}
+ .hp-adopted-proposal .hp-business-source>div {grid-template-columns:76px 1fr;text-align:left;column-gap:14px;}
+ .hp-adopted-proposal .hp-business-source img {grid-row:1/3;width:76px;height:76px;margin:0;}
+ .hp-adopted-proposal .hp-business-source b {font-size:23px;}
+ .hp-adopted-proposal .hp-business-source .hp-diagram-arrow,.hp-adopted-proposal .hp-fee-stages>.hp-diagram-arrow {transform:rotate(90deg);font-size:32px!important;line-height:1;}
+ .hp-adopted-proposal .hp-consult-journey {gap:28px;}
+ .hp-adopted-proposal .hp-consult-journey li {display:grid;grid-template-columns:80px 1fr;text-align:left;column-gap:18px;align-items:center;padding:22px 18px;}
+ .hp-adopted-proposal .hp-consult-journey img {grid-column:1;grid-row:1/3;width:80px;margin:0;}
+ .hp-adopted-proposal .hp-consult-journey li:not(:last-child)::after {right:calc(50% - 14px);top:100%;transform:rotate(90deg);font-size:26px;line-height:1;}
+ .hp-adopted-proposal .hp-fee-timeline {padding:26px 16px;}
+ .hp-adopted-proposal .hp-cycle-grid {gap:28px;}
+ .hp-adopted-proposal .hp-cycle-grid li {display:grid;grid-template-columns:80px 1fr;text-align:left;column-gap:15px;padding:20px 16px;}
+ .hp-adopted-proposal .hp-cycle-no {grid-column:1;grid-row:1;justify-self:center;align-self:center;}
+ .hp-adopted-proposal .hp-cycle-grid img {grid-column:1;grid-row:2/4;width:80px;height:70px;margin:5px 0 0;}
+ .hp-adopted-proposal .hp-cycle-grid h3 {grid-column:2;grid-row:1/3;margin:0!important;}
+ .hp-adopted-proposal .hp-cycle-grid p {grid-column:2;grid-row:3;}
+ .hp-adopted-proposal .hp-cycle-grid li:not(:last-child)::after {content:'↓';position:absolute;top:calc(100% + 1px);left:calc(50% - 10px);font-size:24px;color:#aa8738;line-height:1;}
+ .hp-adopted-proposal .hp-cycle-return {font-size:19px;}
+ .hp-adopted-proposal .hp-roadmap-diagram article {grid-template-columns:1fr;text-align:left;}
+ .hp-adopted-proposal .hp-roadmap-diagram img {grid-row:auto;grid-column:1;margin:0 auto 15px;}
+ .hp-adopted-proposal .hp-roadmap-diagram article p,.hp-adopted-proposal .hp-roadmap-diagram article h3 {grid-column:1;}
+}
+/* Latest user instruction: number/unit rows share their text baseline, component by component. */
+body.hp-adopted-proposal #pricing .proposal-price {align-items:baseline!important;}
+body.hp-adopted-proposal #pricing .proposal-price>strong,
+body.hp-adopted-proposal #pricing .proposal-price>span {align-self:baseline;line-height:1.25;}
+body.hp-adopted-proposal #pricing .proposal-offer {align-items:baseline!important;}
+body.hp-adopted-proposal #pricing .proposal-offer>span,
+body.hp-adopted-proposal #pricing .proposal-offer>strong {align-self:baseline;line-height:1.3;}
+body.hp-adopted-proposal #pricing .hp-fee-stages article>b {align-items:baseline!important;}
+body.hp-adopted-proposal #pricing .hp-fee-stages article>b>strong {align-self:baseline;line-height:1.3;}
+body.hp-adopted-proposal #research .donut>div>strong {display:inline-flex;align-items:baseline;justify-content:center;}
+body.hp-adopted-proposal #research .donut>div>strong>span {align-self:baseline;line-height:inherit;}
+body.hp-adopted-proposal #research .delta {display:flex;align-items:baseline!important;}
+body.hp-adopted-proposal #research .delta>small {display:inline;align-self:baseline;line-height:inherit;margin-top:0;}
+body.hp-adopted-proposal #research .hp-ca-market-observation .bar-value {display:inline-flex;align-items:baseline;justify-content:center;}
+body.hp-adopted-proposal #research .hp-ca-market-observation .bar-value>small {display:inline!important;align-self:baseline;line-height:inherit!important;margin-top:0!important;}
+body.hp-adopted-proposal #research .future-highlight>strong {display:inline-flex;align-items:baseline;}
+body.hp-adopted-proposal #research .future-highlight>strong>small {align-self:baseline;line-height:inherit;}
+body.hp-adopted-proposal #customer-cases .mkc-value.review-number-line {align-items:baseline!important;}
+body.hp-adopted-proposal #customer-cases .mkc-value.review-number-line>strong,
+body.hp-adopted-proposal #customer-cases .mkc-value.review-number-line>small {align-self:baseline!important;line-height:1.3!important;}
+@media(min-width:601px){body.hp-adopted-proposal #report-benefit .uc-flow-section>h3 {align-items:baseline!important;}}
+
+/* Hero order is authored in the DOM; these scoped rules reset inherited offsets. */
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hero-grid {width:min(1040px,calc(100% - 80px))!important;max-width:1040px!important;padding:0!important;margin-inline:auto!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hero-copy {display:flex;flex-direction:column;align-items:center;gap:0;max-width:100%!important;min-width:0;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .mk-adcost-wish {margin:0 auto 14px!important;padding-bottom:0!important;border-bottom:0!important;white-space:normal!important;max-width:100%;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .mk-adcost-wish u,
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .mk-adcost-wish .hp-hero-expansion {display:inline-block;white-space:nowrap;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .proposal-hero-lead {display:flex!important;flex-direction:column;align-items:center;gap:.08em;max-width:100%!important;width:100%;margin:0 auto 22px!important;padding:0!important;line-height:1.3!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .proposal-hero-lead>span {font-size:clamp(20px,2.1vw,28px)!important;line-height:1.3!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .proposal-hero-lead>.hp-industry-headline {position:relative;display:block!important;box-sizing:border-box;width:max-content;max-width:100%;padding:0 .75em!important;margin:0!important;font-size:39px;line-height:1.3!important;white-space:normal;text-align:center;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hp-industry-main {display:block;line-height:inherit;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hp-industry-main>span {display:inline-block;white-space:nowrap;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hp-industry-final {position:relative;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hp-industry-final>sup {position:absolute;left:calc(100% + .08em);top:.12em;font-size:14px;line-height:1;vertical-align:baseline;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hero-copy h1.proposal-title {margin:0 auto 28px!important;font-size:clamp(22px,3.1vw,43px)!important;line-height:1.45!important;letter-spacing:-.035em!important;}
+body.hp-adopted-proposal .hero .hp-methods {display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr) 20px minmax(0,1fr);align-items:center;gap:14px;width:100%;max-width:960px;margin:0 auto 28px;padding:20px 0;border-top:1px solid #d9d6cb;border-bottom:1px solid #d9d6cb;position:static;transform:none;text-align:center;color:#172f67;}
+body.hp-adopted-proposal .hero .hp-method {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;min-width:0;}
+body.hp-adopted-proposal .hero .hp-method>span {display:flex;flex-direction:column;align-items:center;gap:2px;}
+body.hp-adopted-proposal .hero .hp-method-icon {display:block;flex:none;width:64px;height:60px;color:#172f57;}
+body.hp-adopted-proposal .hero .hp-method-title {display:block;font-size:24px;font-weight:900;line-height:1.5;white-space:nowrap;letter-spacing:0;}
+body.hp-adopted-proposal .hero .hp-method-caption {display:block;font-size:19px;font-weight:800;line-height:1.5;color:#76591f;}
+body.hp-adopted-proposal .hero .hp-methods>i {display:block;margin:0;font-size:25px;line-height:1;font-style:normal;color:#967431;align-self:center;}
+
+/* Make the free diagnosis name and the single action distinct at every width. */
+body.hp-adopted-proposal .hero .hp-diagnosis-invitation {display:flex;flex-direction:column;align-items:center;gap:12px;width:100%;max-width:680px;margin:0 auto;text-align:center;}
+body.hp-adopted-proposal .hero .hp-diagnosis-free {display:inline-block;align-self:center;margin:0;padding:4px 18px;background:#e8f5ec;border:1px solid #b8ddc7;border-radius:999px;color:#086437;font-size:18px;font-weight:900;line-height:1.5;}
+body.hp-adopted-proposal .hero .hp-diagnosis-invitation>h2 {margin:0;padding:0;font-size:34px!important;font-weight:900!important;line-height:1.4!important;letter-spacing:0!important;color:#172f67;text-align:center;}
+body.hp-adopted-proposal .hero .hp-diagnosis-invitation>h2>span {display:inline-block;white-space:nowrap;}
+body.hp-adopted-proposal .hero .hp-diagnosis-goal {margin:0;padding:0;font-size:21px;font-weight:800;line-height:1.6;letter-spacing:0;color:#344b70;text-align:center;}
+body.hp-adopted-proposal .hero .hp-diagnosis-goal>span {display:inline-block;white-space:nowrap;}
+body.hp-adopted-proposal .hero a.hp-diagnosis-button {display:grid;grid-template-columns:32px minmax(0,max-content) 15px;justify-content:center;align-items:center;gap:13px;box-sizing:border-box;width:100%;max-width:480px;min-height:72px;margin:6px auto 0;padding:17px 20px;border:1px solid #06713e;border-radius:12px;background:#07834a;color:#fff;box-shadow:0 5px 0 #055f36;font-size:23px;font-weight:900;line-height:1.45;letter-spacing:0;text-decoration:none;text-align:center;}
+body.hp-adopted-proposal .hero a.hp-diagnosis-button:hover {background:#066f3f;}
+body.hp-adopted-proposal .hero .hp-diagnosis-chat {display:block;width:32px;height:32px;flex:none;color:#fff;}
+body.hp-adopted-proposal .hero .hp-diagnosis-button-label {display:block;min-width:0;white-space:nowrap;}
+body.hp-adopted-proposal .hero .hp-diagnosis-button-label>span {display:inline-block;white-space:nowrap;}
+body.hp-adopted-proposal .hero .hp-diagnosis-chevron {font-size:32px;font-weight:700;line-height:1;}
+
+/* Original 492×168 media JPEGs gain actual display width without image edits. */
+body.corporate.hp-form-theme.hp-adopted-proposal .official-media-strip>.container {display:grid;grid-template-columns:1fr;gap:14px;max-width:1040px;text-align:center;}
+body.corporate.hp-form-theme.hp-adopted-proposal .official-media-strip .media-label {margin:0;text-align:center;font-size:19px;font-weight:800;line-height:1.5;}
+body.corporate.hp-form-theme.hp-adopted-proposal .official-media-logos {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:0;width:100%;min-width:0;margin:0 auto;padding:0;border:1px solid #dde1e3;}
+body.corporate.hp-form-theme.hp-adopted-proposal .official-media-logos img {display:block;box-sizing:border-box;max-width:100%;width:100%;height:88px;object-fit:contain;padding:8px 12px;border:0;border-right:1px solid #dde1e3;}
+body.corporate.hp-form-theme.hp-adopted-proposal .official-media-logos img:last-child {border-right:0;}
+body.corporate.hp-form-theme.hp-adopted-proposal .official-media-strip .source-note {grid-column:1;margin:0;text-align:left;}
+
+/* Five cards stay visually centered: three above, two centered below. */
+@media(min-width:901px){
+ body.hp-adopted-proposal .hp-cycle-grid {grid-template-columns:repeat(6,minmax(0,1fr));}
+ body.hp-adopted-proposal .hp-cycle-grid>li {grid-column:span 2;}
+ body.hp-adopted-proposal .hp-cycle-grid>li:nth-child(4) {grid-column:2/span 2;}
+ body.hp-adopted-proposal .hp-cycle-grid>li:nth-child(5) {grid-column:4/span 2;}
+ html body.corporate.hp-form-theme.hp-adopted-proposal #services .service-grid {display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:28px;align-items:stretch;}
+}
+html body.corporate.hp-form-theme.hp-adopted-proposal #services .section-heading>p:not(.eyebrow) {font-size:21px!important;font-weight:700!important;line-height:1.8!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal #monthly-support,
+html body.corporate.hp-form-theme.hp-adopted-proposal #branding {padding-block:64px!important;}
+@media(min-width:701px) and (max-width:900px){
+ body.hp-adopted-proposal .hp-cycle-grid>li:last-child {grid-column:1/-1;justify-self:center;width:calc((100% - 26px)/2);}
+}
+@media(max-width:900px){
+ body.hp-adopted-proposal .hero .hp-methods {grid-template-columns:1fr;gap:8px;max-width:480px;padding:18px 0;}
+ body.hp-adopted-proposal .hero .hp-method {display:grid;grid-template-columns:64px 1fr;column-gap:14px;justify-content:start;width:100%;max-width:340px;margin:0 auto;text-align:left;}
+ body.hp-adopted-proposal .hero .hp-method>span {align-items:flex-start;}
+ body.hp-adopted-proposal .hero .hp-method-title {font-size:21px;}
+ body.hp-adopted-proposal .hero .hp-method-caption {font-size:18px;}
+ body.hp-adopted-proposal .hero .hp-methods>i {font-size:21px;}
+}
+@media(max-width:700px){
+ html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hero-grid {width:calc(100% - 32px)!important;}
+ html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hero-copy h1.proposal-title {font-size:clamp(20px,5.15vw,31px)!important;letter-spacing:-.045em!important;}
+ html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .proposal-hero-lead>span {font-size:20px!important;}
+ html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .proposal-hero-lead>.hp-industry-headline {font-size:clamp(23px,6.2vw,38px);}
+ body.hp-adopted-proposal .hero .hp-diagnosis-invitation>h2 {font-size:28px!important;}
+ body.hp-adopted-proposal .hero a.hp-diagnosis-button {font-size:21px;grid-template-columns:28px minmax(0,max-content) 12px;gap:9px;padding:16px 12px;}
+ body.hp-adopted-proposal .hero .hp-diagnosis-chat {width:28px;height:28px;}
+ body.corporate.hp-form-theme.hp-adopted-proposal .official-media-logos {grid-template-columns:repeat(2,minmax(0,1fr));border:0;gap:0 8px;}
+ body.corporate.hp-form-theme.hp-adopted-proposal .official-media-logos img {height:80px;padding:6px 4px;border:0;}
+ body.corporate.hp-form-theme.hp-adopted-proposal .official-media-logos img:last-child {grid-column:1/-1;justify-self:center;width:calc((100% - 8px)/2);}
+}
+
+/* Audience-only label: decoration does not add vertical space to the prelude. */
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .mk-adcost-wish>.hp-audience-label {position:relative;isolation:isolate;display:inline-block;padding:0 .7em;margin:0;border:0;color:#172f67!important;font-size:inherit!important;font-weight:900!important;line-height:inherit!important;letter-spacing:0!important;white-space:nowrap;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .mk-type-hero .hp-audience-label::before {content:"";position:absolute;inset:2px 0;z-index:-1;border:1px solid #aa8636;border-radius:3px;background:linear-gradient(100deg,#f8edcf,#efdba8);transform:skewX(-6deg);pointer-events:none;}
+
+/* One LINE diagnosis CTA for header, hero, report, cases, price, closing and mobile. */
+html body.corporate.hp-form-theme.hp-adopted-proposal a.hp-unified-diagnosis-cta,
+html body.corporate.hp-form-theme.hp-adopted-proposal #report-benefit a.hp-unified-diagnosis-cta,
+html body.corporate.hp-form-theme.hp-adopted-proposal #customer-cases a.hp-unified-diagnosis-cta,
+html body.corporate.hp-form-theme.hp-adopted-proposal #pricing a.hp-unified-diagnosis-cta {display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;box-sizing:border-box!important;gap:10px!important;width:100%!important;max-width:480px!important;min-width:0!important;height:auto!important;min-height:72px!important;margin-inline:auto!important;padding:14px 12px!important;border:1px solid #06713e!important;border-radius:12px!important;background:#07834a!important;color:#fff!important;box-shadow:0 4px 0 #055f36!important;font-family:inherit!important;font-size:23px!important;font-weight:900!important;line-height:1.4!important;letter-spacing:0!important;text-align:center!important;text-decoration:none!important;white-space:normal!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal a.hp-unified-diagnosis-cta:hover {background:#066f3f!important;color:#fff!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal a.hp-unified-diagnosis-cta:focus-visible {outline:3px solid #bc9547;outline-offset:5px;}
+html body.corporate.hp-form-theme.hp-adopted-proposal a.hp-unified-diagnosis-cta>.hp-unified-line-mark {display:block!important;flex:0 0 40px!important;width:40px!important;height:40px!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;object-fit:contain!important;opacity:1!important;visibility:visible!important;transform:none!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal a.hp-unified-diagnosis-cta>.hp-unified-cta-label {display:block!important;flex:0 1 auto;min-width:0;max-width:calc(100% - 50px);margin:0!important;padding:0!important;font:inherit!important;line-height:1.4!important;color:inherit!important;text-align:center!important;white-space:normal!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .hp-unified-cta-label>span {display:inline-block!important;margin:0!important;padding:0!important;font:inherit!important;line-height:inherit!important;white-space:nowrap!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .hp-unified-diagnosis-group,
+html body.corporate.hp-form-theme.hp-adopted-proposal #pricing .hp-unified-diagnosis-group {display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:12px!important;width:100%!important;max-width:480px!important;min-width:0!important;margin-inline:auto!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal .hp-unified-diagnosis-group>a {grid-column:1!important;grid-row:auto!important;min-width:0!important;}
+html body.corporate.hp-form-theme.hp-adopted-proposal #customer-cases .hp-unified-case-invitation {display:flex!important;flex-direction:column!important;align-items:center!important;gap:16px!important;padding-inline:8px!important;text-align:center!important;}
+@media(min-width:901px){
+ html body.corporate.hp-form-theme.hp-adopted-proposal .site-header .header-inner {height:auto!important;min-height:78px;padding-block:14px;}
+ html body.corporate.hp-form-theme.hp-adopted-proposal .site-header #site-nav {min-width:0;flex-wrap:wrap;justify-content:flex-end;}
+ html body.corporate.hp-form-theme.hp-adopted-proposal .site-header .hp-unified-diagnosis-group {flex:0 1 330px;width:330px!important;max-width:100%!important;}
+}
+@media(max-width:700px){
+ html body.corporate.hp-form-theme.hp-adopted-proposal a.hp-unified-diagnosis-cta,
+ html body.corporate.hp-form-theme.hp-adopted-proposal #report-benefit a.hp-unified-diagnosis-cta,
+ html body.corporate.hp-form-theme.hp-adopted-proposal #customer-cases a.hp-unified-diagnosis-cta,
+ html body.corporate.hp-form-theme.hp-adopted-proposal #pricing a.hp-unified-diagnosis-cta {gap:8px!important;padding:14px 8px!important;min-height:68px!important;font-size:21px!important;}
+ html body.corporate.hp-form-theme.hp-adopted-proposal a.hp-unified-diagnosis-cta>.hp-unified-line-mark {flex-basis:28px!important;width:28px!important;height:28px!important;}
+ html body.corporate.hp-form-theme.hp-adopted-proposal a.hp-unified-diagnosis-cta>.hp-unified-cta-label {max-width:calc(100% - 36px);}
+}
