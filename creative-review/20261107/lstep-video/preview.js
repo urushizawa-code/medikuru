@@ -1,5 +1,5 @@
 const qs=s=>document.querySelector(s);
-const VIDEO={brief:{poster:'poster.jpg?v=07b4988c9130',title:'2分で概要を見る',src:'medikuru-lstep-2min.mp4?v=07b4988c9130',note:'メディくるの全体像を、短くご紹介します'},full:{title:'詳しく見る（8分42秒）',src:'https://medikuru.com/creative-review/20261106/service/medikuru-service-r19.mp4',note:'事例、施策、料金・クレジットの使い方までご紹介します'}};
+const VIDEO={brief:{poster:'poster.jpg?v=6ba936476d6c',title:'2分で概要を見る',src:'medikuru-lstep-2min.mp4?v=6ba936476d6c',note:'メディくるの全体像を、短くご紹介します'},full:{title:'詳しく見る（8分42秒）',src:'https://medikuru.com/creative-review/20261106/service/medikuru-service-r19.mp4',note:'事例、施策、料金・クレジットの使い方までご紹介します'}};
 let menuOpen=true,lastVideoChoice=null;
 function setMenu(open){menuOpen=open;qs('#menu-art').hidden=!open;qs('#menu-toggle').setAttribute('aria-expanded',String(open));qs('#menu-caret').textContent=open?'⌄':'⌃'}
 function shell(content){return '<div class="sent"><div class="avatar"><img src="assets/logo.png" alt=""></div><div class="received"><p class="sender">メディくる</p><div class="bubble">'+content+'</div><div class="time">10:00</div></div></div>'}
