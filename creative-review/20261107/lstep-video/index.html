@@ -1,81 +1,9 @@
 <!doctype html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#ffffff">
-<title>動画でわかるメディくる｜LINE受信画面プレビュー</title>
-<style>
-:root{--pink:#CF56A0;--teal:#21BDC6;--ink:#353537;--gray:#636366;--line:#E5E9EC}
-*{box-sizing:border-box}body{margin:0;font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:var(--ink)}
-button,a{font:inherit;touch-action:manipulation}button{cursor:pointer}button:focus-visible,a:focus-visible,video:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
-.review-head{max-width:1000px;margin:auto;padding:24px 24px 20px;border-bottom:3px solid var(--teal)}
-.brand{display:flex;gap:18px;align-items:center;flex-wrap:wrap}.brand img{width:145px;height:auto;display:block}.badge{border:1px solid var(--teal);border-radius:20px;padding:5px 12px;font-size:12px;color:var(--gray)}
-h1{font-size:27px;line-height:1.5;margin:17px 0 8px}.review-head p{font-size:15px;line-height:1.8;margin:0;color:var(--gray)}
-main{max-width:1000px;margin:28px auto 36px;display:grid;grid-template-columns:1fr 430px;gap:38px;padding:0 24px;align-items:start}
-.guide{padding:12px 0}.guide h2{font-size:24px;line-height:1.65;margin:0 0 18px}.guide ol{margin:0;padding:0;list-style:none;counter-reset:steps;display:grid;gap:20px}.guide li{counter-increment:steps;padding-left:44px;position:relative;font-size:16px;line-height:1.85}.guide li:before{content:counter(steps,decimal-leading-zero);position:absolute;left:0;top:2px;color:var(--teal);font-weight:700;font-size:19px}.guide strong{display:block}.guide .small{font-size:13px;color:var(--gray);line-height:1.8;margin-top:26px}.restart{background:white;border:1px solid var(--teal);color:var(--ink);border-radius:24px;padding:10px 18px;font-weight:700;margin-top:20px}
-.phone-wrap{width:430px;max-width:100%;padding:18px;border:1px solid var(--line);border-radius:36px;background:#F9FBFC}
-.phone{position:relative;width:390px;max-width:100%;height:min(844px,calc(100dvh - 30px));min-height:560px;display:flex;flex-direction:column;background:#B4C4D5;border:1px solid #D7E0E7;border-radius:22px;overflow:hidden}
-.status{height:30px;flex:0 0 30px;background:white;padding:4px 18px;font:700 13px/22px -apple-system,sans-serif;display:flex;justify-content:space-between;align-items:center}.status-icons{font-size:12px;letter-spacing:2px}
-.line-head{height:53px;flex:0 0 53px;display:flex;justify-content:space-between;align-items:center;background:white;padding:0 16px;border-bottom:1px solid var(--line)}.line-head .back{font-size:29px;line-height:1}.line-head strong{font-size:18px}.line-head .tools{font-size:19px;letter-spacing:8px}
-.chat{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;padding:17px 10px 22px;scrollbar-width:thin;scroll-behavior:smooth}
-.sent{display:flex;align-items:start;gap:7px;margin-bottom:16px}.avatar{width:29px;height:29px;flex:0 0 29px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-top:1px}.avatar img{width:26px}.received{flex:1;min-width:0}.sender{font-size:11px;margin:0 0 4px;color:#40596E}.bubble{border-radius:0 13px 13px 13px;background:white;overflow:hidden}.copy{padding:16px 15px 18px;font-size:16px;line-height:1.75}.copy h2{font-size:18px;line-height:1.6;margin:0 0 11px}.copy p{margin:0}.time{font:10px/1.4 -apple-system,sans-serif;margin-top:5px;color:#526A7D}
-.choice{display:block;width:100%;border:0;background:white;text-align:left;padding:17px 16px 19px;border-top:1px solid var(--line);position:relative;color:var(--ink)}.choice:after{content:'›';position:absolute;right:15px;top:22px;font:28px/1 sans-serif;color:var(--pink)}.choice strong{display:block;font-size:18px;line-height:1.6;margin-right:15px}.choice small{display:block;font-size:13px;color:var(--gray);line-height:1.65;margin-top:4px;margin-right:18px}.choice.brief strong{color:var(--pink)}.choice.full strong{color:#137D85}.choice:active{background:#FCF3F8}
-.video-page{position:absolute;inset:30px 0 22px;background:white;z-index:10;display:flex;flex-direction:column}.video-page[hidden]{display:none}.video-page-head{min-height:57px;display:grid;grid-template-columns:125px 1fr 125px;align-items:center;border-bottom:1px solid var(--line);background:white}.video-page-head strong{text-align:center;font-size:15px;white-space:nowrap}.back-to-chat{border:0;background:white;color:#137D85;text-align:left;padding:15px 9px;font-size:13px;font-weight:700;white-space:nowrap}.video-page-body{overflow-y:auto;min-height:0;flex:1;padding-top:13px}.player-title{padding:15px 18px 19px;font-size:21px;font-weight:700;line-height:1.6;margin:0}.video-frame{background:#fff;aspect-ratio:16/9;width:100%}video{width:100%;height:100%;display:block;background:#fff}.video-note{font-size:15px;line-height:1.8;padding:17px 18px;color:var(--gray)}.video-error{margin:0;padding:12px 18px;font-size:13px;line-height:1.7;color:#9B315F;background:#FFF5FA}.video-error[hidden]{display:none}
-.composer{height:58px;flex:0 0 58px;background:white;display:flex;align-items:center;gap:12px;padding:8px 14px;border-top:1px solid #E9EEF1}.composer .plus{font:29px/1 -apple-system,sans-serif}.composer .field{height:32px;flex:1;border:1px solid #E7EBEF;border-radius:19px;background:#F8FAFB}.composer .keyboard{font-size:18px}.composer .mic{font-size:18px}
-.menu-dock{background:white;flex:0 0 auto}.menu-toggle{border:0;width:100%;height:37px;background:white;color:var(--ink);font-size:13px;font-weight:700}.menu-art{width:100%;position:relative;line-height:0}.menu-art[hidden]{display:none}.menu-art img{width:100%;height:auto;display:block}.video-menu-tap{position:absolute;left:66.6667%;top:0;width:33.3333%;height:50%;border:0;background:transparent;color:transparent;padding:0}.video-menu-tap:hover{box-shadow:inset 0 0 0 2px var(--teal)}.home{background:white;height:22px;display:flex;justify-content:center;align-items:center}.home:after{content:'';width:132px;height:5px;border-radius:4px;background:#353537}
-.page-foot{text-align:center;color:var(--gray);font-size:12px;line-height:1.8;margin:0 20px 25px}
-@media(max-width:720px){.review-head{padding:18px 17px 15px}.brand{gap:12px}.brand img{width:130px}h1{font-size:22px;margin:14px 0 7px}.review-head p{font-size:13px}main{display:flex;flex-direction:column;gap:18px;padding:0;margin:20px auto;align-items:center}.guide{order:2;max-width:390px;padding:0 18px}.guide h2{font-size:19px;margin-bottom:13px}.guide ol{gap:10px}.guide li{font-size:14px}.guide .small{margin-top:16px}.phone-wrap{width:390px;max-width:100%;padding:0;border:0;border-radius:0;background:white}.phone{height:min(844px,100dvh);min-height:560px;border-radius:0;border:0}.page-foot{font-size:11px}}
-@media(prefers-reduced-motion:reduce){.chat{scroll-behavior:auto}}
-</style>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-<link rel="icon" href="assets/logo.png" type="image/png"><link rel="apple-touch-icon" href="assets/logo.png">
-<!-- Google Tag Manager: GTM-WLJLFGBG -->
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>約2分でわかるメディくる｜最新紹介動画</title>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WLJLFGBG');</script>
-</head>
-<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLJLFGBG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<header class="review-head">
- <div class="brand"><img src="assets/logo.png" alt="メディくる"><span class="badge">LINE表示案・本番未反映</span></div>
- <h1>動画の案内を、2つから選べる形に</h1>
- <p>メニューから届く案内と、動画の見え方を確認できます</p>
-</header>
-<main>
- <section class="guide" aria-label="確認方法">
-  <h2>まずは短く、<br>気になったら詳しく</h2>
-  <ol><li><strong>メニューの動画枠をタップ</strong>トーク内に、2つの動画の案内が届きます</li><li><strong>見たい長さを選ぶ</strong>2分で全体像を知るか、8分42秒で詳しく確認できます</li><li><strong>選ぶと動画ページへ</strong>再生後は「トークに戻る」から、元の案内へ戻れます</li></ol>
-  <button class="restart" id="restart" type="button">メニューから見直す</button>
-  <p class="small">確認用の表示案です<br>LINEへの配信・本番設定は行っていません</p>
- </section>
- <section class="phone-wrap" aria-label="スマホのLINE受信画面プレビュー">
- <div class="phone" id="phone">
-  <div class="status" aria-hidden="true"><span>10:00</span><span class="status-icons">▮▮▮ ◔ ▰</span></div>
-  <div class="line-head"><span class="back" aria-hidden="true">‹</span><strong>メディくる</strong><span class="tools" aria-hidden="true">⌕ ≡</span></div>
-  <div class="chat" id="chat" aria-live="polite"></div>
-  <div class="composer" aria-hidden="true"><span class="keyboard">⌨</span><span class="plus">＋</span><span class="field"></span><span class="mic">♩</span></div>
-  <div class="menu-dock"><button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="true" aria-controls="menu-art">スコア・事例・相談 <span id="menu-caret">⌄</span></button><div class="menu-art" id="menu-art"><img src="assets/menu-before.png" alt="診断前の6枠リッチメニュー"><button class="video-menu-tap" type="button" aria-label="動画でわかるメディくる" id="video-menu-tap">動画でわかるメディくる</button></div></div>
-  <div class="home" aria-hidden="true"></div>
-  <section class="video-page" id="video-page" role="dialog" aria-modal="true" aria-labelledby="video-page-label" hidden>
-   <div class="video-page-head"><button class="back-to-chat" id="back-to-chat" type="button">‹ トークに戻る</button><strong id="video-page-label">動画ページ</strong><span></span></div>
-   <div class="video-page-body" id="video-page-body"></div>
-  </section>
- </div>
- </section>
-</main>
-<p class="page-foot">2分版と8分42秒版を確認できます</p>
-<script>
-const qs=s=>document.querySelector(s);
-const VIDEO={brief:{poster:'poster.jpg?v=6ba936476d6c',title:'2分で概要を見る',src:'medikuru-lstep-2min.mp4?v=6ba936476d6c',note:'メディくるの全体像を、短くご紹介します'},full:{title:'詳しく見る（8分42秒）',src:'https://medikuru.com/creative-review/20261106/service/medikuru-service-r21.mp4?v=8ba4dc2e6edf',note:'事例、施策、料金・クレジットの使い方までご紹介します'}};
-let menuOpen=true,lastVideoChoice=null;
-function setMenu(open){menuOpen=open;qs('#menu-art').hidden=!open;qs('#menu-toggle').setAttribute('aria-expanded',String(open));qs('#menu-caret').textContent=open?'⌄':'⌃'}
-function shell(content){return '<div class="sent"><div class="avatar"><img src="assets/logo.png" alt=""></div><div class="received"><p class="sender">メディくる</p><div class="bubble">'+content+'</div><div class="time">10:00</div></div></div>'}
-function closeVideoPage(restoreFocus=true){const v=qs('video');if(v)v.pause();qs('#video-page').hidden=true;qs('#chat').inert=false;qs('.composer').inert=false;qs('.menu-dock').inert=false;if(restoreFocus&&lastVideoChoice)qs('[data-video="'+lastVideoChoice+'"]').focus({preventScroll:true})}
-function reset(){closeVideoPage(false);qs('#video-page-body').innerHTML='';lastVideoChoice=null;qs('#chat').innerHTML=shell('<div class="copy"><h2>動画でわかるメディくる</h2><p>メディくるでできることを、<br>動画でご紹介します</p></div>');setMenu(true);qs('#chat').scrollTop=0}
-function showChoices(){closeVideoPage(false);setMenu(false);qs('#chat').innerHTML=shell('<div class="copy"><h2>動画でわかるメディくる</h2><p>まずは全体像を短く<br>じっくり知りたい方は、詳しい動画へ</p></div><button type="button" class="choice brief" data-video="brief"><strong>2分で概要を見る</strong><small>どんな課題を、どう解決するか</small></button><button type="button" class="choice full" data-video="full"><strong>詳しく見る（8分42秒）</strong><small>事例・料金・施策の選び方まで</small></button>');qs('#chat').scrollTop=0;qs('.choice.brief').focus({preventScroll:true})}
-function showPlayer(which){const old=qs('video');if(old)old.pause();const d=VIDEO[which];if(!d)return;lastVideoChoice=which;setMenu(false);qs('#video-page-body').innerHTML='<h2 class="player-title">'+d.title+'</h2><div class="video-frame"><video id="selected-video" controls playsinline preload="metadata"'+(d.poster?' poster="'+d.poster+'"':'')+' aria-label="'+d.title+'"><source src="'+d.src+'" type="video/mp4">動画を再生できるブラウザでご覧ください</video></div><div class="video-note">'+d.note+'</div><p class="video-error" hidden>動画を読み込めませんでした<br>少し時間をおいて、もう一度お試しください</p>';qs('#video-page').hidden=false;qs('#chat').inert=true;qs('.composer').inert=true;qs('.menu-dock').inert=true;qs('#video-page-body').scrollTop=0;const v=qs('#selected-video');v.addEventListener('error',()=>{qs('.video-error').hidden=false});v.querySelector('source').addEventListener('error',()=>{qs('.video-error').hidden=false});qs('#back-to-chat').focus({preventScroll:true})}
-qs('#menu-toggle').addEventListener('click',()=>setMenu(!menuOpen));qs('#video-menu-tap').addEventListener('click',showChoices);qs('#restart').addEventListener('click',reset);qs('#back-to-chat').addEventListener('click',()=>closeVideoPage());qs('#video-page').addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();closeVideoPage()}});qs('#chat').addEventListener('click',e=>{const choice=e.target.closest('[data-video]');if(choice)showPlayer(choice.dataset.video)});reset();
-if(new URLSearchParams(location.search).get('watch')==='brief'){showChoices();showPlayer('brief');}
-window.previewState=()=>({menuOpen,choices:document.querySelectorAll('[data-video]').length,videoPageOpen:!qs('#video-page').hidden,video:qs('video')?.currentSrc||null,videoInMessage:!!qs('#chat video')});
-</script>
-</body>
-</html>
+<meta http-equiv="refresh" content="0;url=https://medikuru.com/boost/intro/">
+<link rel="canonical" href="https://medikuru.com/boost/intro/">
+<link rel="icon" href="assets/logo.png" type="image/png"><link rel="apple-touch-icon" href="assets/logo.png">
+<style>body{margin:0;background:#fff;color:#393939;font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;line-height:1.8}main{box-sizing:border-box;max-width:680px;margin:12vh auto;padding:28px 24px}h1{margin:0 0 18px;font-size:clamp(24px,5vw,32px);line-height:1.5}p{margin:0 0 20px;font-size:17px}a{color:#147e85;text-underline-offset:.2em;font-weight:700}</style>
+</head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WLJLFGBG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><main><h1>約2分でわかるメディくる</h1><p>最新の紹介動画へ移動します</p><a href="https://medikuru.com/boost/intro/">最新の紹介動画を見る →</a></main><script>window.location.replace("https://medikuru.com/boost/intro/");</script></body></html>
