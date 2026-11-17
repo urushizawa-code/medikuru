@@ -7386,7 +7386,7 @@ function init(){
  },{threshold:.22,rootMargin:'0px 0px -24px 0px'});
  const research=document.getElementById('research');
  if(research){
-  // Research percentage stays at its final HTML value; only illustrative score45 counts.
+  // Research percentage stays at its final HTML value.
   const chart=research.querySelector('.bar-chart');
   watch(chart,()=>{
    return Promise.all([...chart.querySelectorAll('.bar-group')].flatMap((group,i)=>{
@@ -7401,13 +7401,19 @@ function init(){
    return Promise.all([lineMotion,...[...future.querySelectorAll('circle')].map((dot,i)=>animate(dot,[{opacity:.35},{opacity:1}],{duration:650,delay:i*600}))]);
   });
  }
- // Optional opening score; exact same static 45/100 example and arc are retained.
- const opening=document.getElementById('opening-score-preview');
- if(opening){
-  const arc=opening.querySelector('.msf-gauge svg path[pathLength="100"],.msf-gauge svg path[pathlength="100"]'),number=opening.querySelector('.msf-number strong');
-  if(arc&&number&&number.textContent.trim()==='45'){
-   const dash=arc.getAttribute('stroke-dasharray'),original=number.textContent;
-   watchReplay(opening.querySelector('.msf-result')||opening,()=>tween(1500,p=>{number.textContent=String(Math.round(45*p));arc.setAttribute('stroke-dasharray',(45*p).toFixed(2)+' 100')},()=>{number.textContent=original;arc.setAttribute('stroke-dasharray',dash)}));
+ // Count only the two figures at the top. Final values are always present in the HTML.
+ const heroProof = document.querySelector("#hp-opening-20261105 .hc-hero-stats");
+ if (heroProof) {
+  const targets = [...heroProof.querySelectorAll("strong > b")].flatMap(element => {
+   const text = [...element.childNodes].find(node => node.nodeType === 3 && /^(94|500)$/.test(node.nodeValue.trim()));
+   return text ? [{text, final: text.nodeValue, value: Number(text.nodeValue.trim())}] : [];
+  });
+  if (targets.length === 2 && targets.some(target => target.value === 94) && targets.some(target => target.value === 500)) {
+   watch(heroProof, () => tween(1100, progress => {
+    for (const target of targets) target.text.nodeValue = String(Math.round(target.value * progress));
+   }, () => {
+    for (const target of targets) target.text.nodeValue = target.final;
+   }));
   }
  }
  // The shared LP/HP growth chart: reveal the existing bars from the baseline upward.
