@@ -1,0 +1,70 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lステップ用 図解画像案</title><style>html,body{margin:0;background:#fff}
+@font-face{font-family:SP20;src:url(assets/notojp.woff2) format('woff2');font-weight:100 900;font-display:swap}
+.sp20{--pink:#cf56a0;--ink:#24363a;--teal:#27818a;--line:#dce7e9;--pale:#fbf4f8;box-sizing:border-box;color:var(--ink);font-family:SP20,'Noto Sans JP',sans-serif!important;font-size:16px;line-height:1.8;letter-spacing:.015em;text-align:left;isolation:isolate}
+.sp20 *{box-sizing:border-box;font-family:inherit}
+.sp20 p,.sp20 h2,.sp20 h3,.sp20 figure{margin:0}
+.sp20-wrap{max-width:1080px;margin:auto;padding:56px 32px;background:#fff}
+.sp20-kicker{font-size:14px;font-weight:700;color:var(--teal);letter-spacing:.07em;margin-bottom:16px!important}
+.sp20-title{font-size:36px!important;font-weight:700!important;line-height:1.45!important;letter-spacing:.01em!important;color:var(--ink)!important;margin:0 0 20px!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important}
+.sp20-title span{display:inline-block}.sp20-title strong{color:var(--pink);font-weight:700}
+.sp20-lead{max-width:680px;font-size:17px;line-height:1.8;margin-bottom:32px!important}
+.sp20-scenario{font-size:14px;font-weight:700;color:var(--teal);margin:0 0 16px!important;display:flex;align-items:center;gap:10px}
+.sp20-scenario:before{content:'';width:24px;height:2px;background:var(--teal);flex:none}
+.sp20-money{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:24px;box-shadow:0 10px 24px #24363a05}
+.sp20-cost{padding:28px 32px;background:#fff;display:flex;flex-direction:column;justify-content:center}
+.sp20-cost-label{font-size:16px;font-weight:700}.sp20-small{font-size:14px;color:#526368;line-height:1.7}
+.sp20-number{display:flex;align-items:baseline;gap:6px;white-space:nowrap;letter-spacing:0;line-height:1.14;font-variant-numeric:lining-nums tabular-nums}
+.sp20-number b{font-size:60px;font-weight:700;line-height:1.15}.sp20-number span{font-size:22px;font-weight:700}
+.sp20-cost .sp20-number{margin:4px 0 8px;color:#526368}.sp20-cost .sp20-number b{font-size:60px}
+.sp20-cost:after{content:'';display:block;height:38px;flex-shrink:0}
+.sp20-result{position:relative;background:var(--pale);padding:28px 32px;display:flex;flex-direction:column;justify-content:center}
+.sp20-result-label{font-size:16px;font-weight:700}.sp20-result .sp20-number{color:var(--pink);margin:4px 0 8px}
+.sp20-equation{display:flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:8px 12px;padding:16px 24px;background:#f3f8f9;border-radius:12px;color:#3c565d;font-size:15px;line-height:1.7}
+.sp20-equation strong{font-size:17px;font-weight:700}.sp20-equation .sp20-sign{color:var(--teal);font-size:22px}
+.sp20-bar{display:flex;border-radius:8px;overflow:hidden;margin:20px 0 12px;min-height:60px;font-size:15px;font-weight:700;line-height:1.55;text-align:center}
+.sp20-bar>span{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:12px 8px}.sp20-bar .sp20-grant{flex:50;background:#e3f2f3;color:#216c74}.sp20-bar .sp20-pay{flex:43.5;background:#f7e6f0;color:#a53b7d}
+.sp20-caption{font-size:14px;color:#526368;line-height:1.7}.sp20-note{font-size:13px!important;color:#5a696d;line-height:1.7!important;margin-top:16px!important;letter-spacing:0!important}
+.sp20-plan{margin-top:40px;padding-top:32px;border-top:1px solid var(--line)}
+.sp20-plan-head{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:20px}
+.sp20-plan-head h3{font-size:24px!important;font-weight:700!important;line-height:1.45!important;color:var(--ink)!important;letter-spacing:.01em!important;padding:0!important;background:none!important}
+.sp20-plan-caption{font-size:14px;color:#526368;margin-top:8px!important}
+.sp20-plan-badge{font-size:13px;font-weight:700;line-height:1.6;color:var(--teal);background:#edf7f8;border-radius:8px;padding:7px 12px;white-space:nowrap}
+.sp20-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.sp20-tile{padding:24px;background:#fff;border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column;gap:12px}
+.sp20-tile svg{width:56px;height:56px;color:var(--teal)}
+.sp20-tile h4{font-size:17px;font-weight:700;line-height:1.5;margin:0;letter-spacing:.01em}
+.sp20-tile p{font-size:14px;color:#526368;line-height:1.7}.sp20-mc{font-size:14px;font-weight:700;color:var(--teal);margin-top:auto!important}
+.sp20-plan-total{font-size:15px;color:#526368;line-height:1.7;margin-top:16px!important}
+.sp20-breakdown{margin-top:16px;font-size:14px;color:#526368}.sp20-breakdown summary{cursor:pointer;font-weight:700}.sp20-breakdown p{padding-top:8px;font-size:14px;line-height:1.8}
+.sp20-half{display:inline-block;align-self:flex-start;border:1px solid #e3b7d3;border-radius:20px;color:#a53b7d;background:#fff;padding:2px 12px;font-size:13px;font-weight:700;margin-top:8px}
+.sp20-phrase{display:inline-block;white-space:nowrap}
+.sp20-report{display:flex;align-items:flex-start;gap:12px;background:#f3f8f9;padding:20px 24px;border-radius:12px;margin-top:24px;font-size:15px;line-height:1.7}
+.sp20-report:before{content:'✓';font-size:21px;color:var(--teal);line-height:1.3}.sp20-report strong{font-weight:700}
+.sp20-invite{font-size:17px;font-weight:700;line-height:1.7;margin-top:32px!important}.sp20-invite span{display:inline-block}
+.sp20-compact .sp20-wrap{padding:40px 32px}.sp20-compact .sp20-title{font-size:30px!important}.sp20-compact .sp20-tiles{gap:12px}.sp20-compact .sp20-tile{padding:20px}.sp20-compact .sp20-plan{margin-top:32px;padding-top:28px}
+.sp20-reviewbar{position:sticky;top:0;z-index:99999999;display:flex;justify-content:space-between;align-items:center;gap:12px;background:#24363a;color:#fff;font:14px/1.6 SP20,sans-serif;padding:10px 20px;text-align:left}.sp20-reviewbar a{color:#fff;text-decoration:underline}
+#sp20-case20{scroll-margin-top:70px}
+.sp20-in-context #sp20-case20 .sp20-wrap{padding-inline:0!important}
+.sp20-in-context #sp20-case20 h2.sp20-title{font-size:36px!important;line-height:1.45!important;margin:0 0 20px!important;padding:0!important}
+.sp20-in-context #sp20-case20 h2.sp20-title span,.sp20-in-context #sp20-case20 h2.sp20-title strong{margin:0!important;padding:0!important;font-size:inherit!important;line-height:inherit!important;letter-spacing:inherit!important;background:none!important;box-shadow:none!important}
+.sp20-in-context #sp20-case20 h2.sp20-title span{display:inline-block!important}
+.sp20-in-context #sp20-case20 h2.sp20-title strong{color:#cf56a0!important;font-weight:700!important}
+.sp20-in-context #sp20-case20 h3{font-size:24px!important;line-height:1.45!important;margin:0!important;padding:0!important}
+@media(max-width:600px){.sp20-wrap{padding:40px 20px}.sp20-kicker{font-size:13px;margin-bottom:12px!important}.sp20-title{font-size:27px!important;line-height:1.5!important;margin-bottom:16px!important}.sp20-lead{font-size:16px;margin-bottom:24px!important}.sp20-scenario{font-size:13px;gap:8px}.sp20-money{grid-template-columns:1fr;border-radius:16px;margin-bottom:20px}.sp20-cost{padding:20px 24px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 16px}.sp20-cost-label{font-size:15px}.sp20-cost .sp20-small{grid-column:1/-1;font-size:13px}.sp20-cost .sp20-number{margin:0}.sp20-cost .sp20-number b{font-size:38px}.sp20-cost .sp20-number span{font-size:18px}.sp20-result{padding:24px;align-items:center;text-align:center}.sp20-result-label{font-size:15px}.sp20-result .sp20-number b{font-size:64px}.sp20-result .sp20-number span{font-size:22px}.sp20-equation{padding:16px 18px;gap:6px 8px;font-size:13px}.sp20-equation strong{font-size:15px}.sp20-equation>span:not(.sp20-sign){white-space:nowrap}.sp20-caption{font-size:13px}.sp20-note{font-size:12px!important;line-height:1.75!important}.sp20-bar{font-size:14px;min-height:64px;margin-top:16px}.sp20-plan{margin-top:32px;padding-top:28px}.sp20-plan-head{display:block;margin-bottom:20px}.sp20-plan-head h3{font-size:23px!important}.sp20-plan-badge{display:inline-block;margin-top:12px;white-space:normal}.sp20-tiles{grid-template-columns:1fr;gap:12px}.sp20-tile{display:grid;grid-template-columns:56px 1fr;gap:4px 16px;padding:20px}.sp20-tile svg{grid-row:1/4;align-self:center}.sp20-tile h4{font-size:17px}.sp20-tile p{font-size:14px}.sp20-mc{font-size:13px!important;margin-top:2px!important}.sp20-plan-total{font-size:14px}.sp20-report{font-size:14px;padding:16px 20px;gap:10px}.sp20-invite{font-size:16px;margin-top:24px!important}.sp20-compact .sp20-wrap{padding:32px 20px}.sp20-compact .sp20-title{font-size:25px!important}.sp20-compact .sp20-plan{margin-top:28px;padding-top:24px}.sp20-compact .sp20-tile{padding:16px 18px}.sp20-reviewbar{font-size:12px;padding:8px 12px}}
+@media(max-width:600px){.sp20-in-context #sp20-case20 h2.sp20-title{font-size:27px!important;line-height:1.5!important;margin-bottom:16px!important}.sp20-in-context #sp20-case20 h3{font-size:23px!important}}
+@media(max-width:600px){.sp20-cost:after{display:none}.sp20-half{align-self:center}}
+
+.sp20-line{width:1080px;min-height:1560px;padding:64px 76px 58px;background:#fff;border-top:12px solid #27818a;position:relative}
+.sp20-line img{width:228px;height:auto;display:block;margin-bottom:42px}
+.sp20-line .sp20-kicker{font-size:31px;margin-bottom:20px!important;letter-spacing:.025em}
+.sp20-line h1{font-size:69px;line-height:1.4;font-weight:700;margin:0 0 36px;letter-spacing:0;color:#24363a}.sp20-line h1 strong{color:#cf56a0;font-weight:700}
+.sp20-line .sp20-scenario{font-size:28px;margin-bottom:20px!important}.sp20-line .sp20-scenario:before{width:36px}
+.sp20-line-money{display:grid;grid-template-columns:1fr 1.25fr;border:2px solid #dce7e9;border-radius:24px;overflow:hidden;margin-bottom:30px}
+.sp20-line-cost{padding:32px 24px;background:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:12px}.sp20-line-cost p,.sp20-line-result p{font-size:30px;font-weight:700;line-height:1.6}
+.sp20-line-result{padding:32px 24px;background:#fbf4f8;display:flex;flex-direction:column;align-items:center;gap:12px}.sp20-line .sp20-number b{font-size:104px}.sp20-line .sp20-number span{font-size:36px}.sp20-line-result .sp20-number{color:#cf56a0}.sp20-line-result small,.sp20-line-cost small{font-size:23px;line-height:1.5}
+.sp20-line-equation{font-size:28px!important;text-align:center;line-height:1.7;margin-bottom:32px!important;color:#526368}
+.sp20-line-plan{display:flex;align-items:center;gap:22px;padding:24px 30px;border-radius:18px;background:#f1f8f8;margin-bottom:32px}
+.sp20-line-plan svg{width:72px;height:72px;flex:none;color:#27818a}.sp20-line-plan strong{font-size:31px;line-height:1.6}.sp20-line-plan p{font-size:25px;line-height:1.6;color:#526368}
+.sp20-line-note{font-size:24px!important;line-height:1.7!important;letter-spacing:0;margin-bottom:26px!important;color:#526368}
+.sp20-line-cta{font-size:32px;font-weight:700;line-height:1.6;text-align:center;padding-top:26px;border-top:2px solid #dce7e9}
+</style><body><main class="sp20 sp20-line"><img src="assets/logo.png" alt="メディくる"><p class="sp20-kicker">補助金で、費用の負担を抑える。</p><h1>報道も、LPも、記事も。<br><strong>まとめて取り組む。</strong></h1><p class="sp20-scenario">補助金50万円を受給した場合の試算</p><div class="sp20-line-money"><div class="sp20-line-cost"><p>施策プラン</p><div class="sp20-number"><b>88</b><span>万円</span></div><small>10,000MCプラン・税込</small></div><div class="sp20-line-result"><p>受給後のご負担※</p><div class="sp20-number" style="color:#cf56a0!important"><b style="color:inherit!important">43.5</b><span style="color:inherit!important">万円</span></div><small>申請サポート料を含む・税込</small></div></div><p class="sp20-line-equation">プラン88万円 ＋ 申請サポート5.5万円<br>− 補助金50万円 ＝ ご負担43.5万円</p><div class="sp20-line-plan"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 13h32v34H12zM44 22h7v21a4 4 0 0 1-4 4"/><path d="M19 21h18M19 28h7v10h-7zM31 28h6M31 34h6M19 42h18"/></svg><div><strong>取材ニュース ＋ LP ＋ 記事3本</strong><p>88万円・10,000MCの活用プラン例</p></div></div><p class="sp20-line-note">※補助金50万円を受給した場合の試算です。採択・補助額は審査によります。金額は税込、申請サポート料5.5万円を含みます。補助金は後日入金です。<br>取材ニュースの報道には審査があります。</p><p class="sp20-line-cta">御社に合う組み合わせを、<br>無料相談でご案内します。</p></main></body></html>
