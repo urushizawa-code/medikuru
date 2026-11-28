@@ -1,0 +1,12 @@
+/* Review 196: only LINE follows the screen; promise remains in document flow. */
+.promise-after-hero{padding:26px 0 8px;background:#fff;scroll-margin-top:24px}
+.promise-after-hero .hero-promise{margin:0 auto;max-width:620px}
+@media(max-width:767px){
+ .hero{min-height:calc(100svh - 62px)}
+ .promise-after-hero{padding:24px 0 0}
+ .promise-after-hero .hero-promise{padding:16px 14px;gap:12px;margin:0}
+ .promise-after-hero .hero-promise strong{font-size:14px;white-space:nowrap}
+ .promise-after-hero .hero-promise .sp{display:none}
+ .promise-after-hero .hero-promise>span{font-size:12px;padding:8px}
+ .promise-after-hero .hero-promise p{font-size:14px}
+}
